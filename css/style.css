@@ -2263,10 +2263,10 @@ ul {
 }
 
 .submenu li:hover {
-	background: rgba(255, 255, 0, 0.705);
-	box-shadow: -1px 1px 51px -20px rgba(0, 0, 0, 1);
-	border-radius: 5px;
-	color: #fff;
+	background: rgba(217, 217, 217, 0.705);
+	box-shadow: -1px 1px 31px -20px rgba(0, 0, 0, 1);
+	border-radius: 1px;
+	color: rgb(68, 74, 77);
 }
 
 .submenu a {
