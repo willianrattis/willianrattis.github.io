@@ -76,14 +76,16 @@ export default {
 				projectName: "",
 				image: "",
 				summary:
-					"",
+					"Como desenvolvedor web, tenho trabalhado com uma variedade de tecnologias ao longo dos anos. Comecei minha carreira trabalhando com tecnologias precursoras da web, como ASP.NET Web Forms, mas recentemente me especializei em frameworks modernos como Angular e React.",
 				preview: "",
 				techStack: [
-					// "ASP.NET MVC",
-					// "HTML5",
-					// "Bootstrap",
-					// "JavaScript",
-					// "SCSS",
+					"Angular",
+					"React",
+					"ASP.NET MVC",
+					"HTML5",
+					"Bootstrap",
+					"JavaScript",
+					"CSS",
 				],
 			}
 		],
@@ -92,31 +94,28 @@ export default {
 				projectName: "",
 				image: "",
 				summary:
-					"",
+					"Nos últimos anos, dediquei-me a desenvolver sistemas distribuídos e escaláveis, utilizando tecnologias populares como AKS, Kubernetes e Docker, junto com as mais recentes atualizações do framework .NET. Recentemente, utilizei essas tecnologias para construir um sistema para uma empresa de comércio eletrônico.",
 				preview:
 					"",
 				techStack: [
-					// "NET",
-					// "ASP.NET Web API",
-					// "Swagger",
-					// "Microserviços",
-					// "Kafka",
-					// "MongoDb",
+					"NET",
+					"ASP.NET Web API",
+					"Swagger",
+					"Microserviços",
+					"Kafka",
+					"MongoDb",
 				],
 			}
 		],
-		frontend: [
+		app: [
 			{
 				projectName: "",
 				image: "",
 				summary:
-					"",
+					"Durante os últimos três anos, tive a oportunidade de trabalhar junto com desenvolvimento de aplicativos nativos tanto para iOS quanto para Android. Essa jornada me permitiu compreender as particularidades desses dispositivos, além de me familiarizar com a necessidade de construir APIs Gateways (BFF) para atender esses dispositivos.",
 				techStack: [
-					// "JavaScript",
-					// "HTML5",
-					// "CSS",
-					// "React",
-					// "Angular"
+					"iOS",
+					"Android",
 				],
 			}
 		]
@@ -457,5 +456,5 @@ export default {
 				"Feito com &hearts; ."
 			],
 		},
-	],
+	]
 };

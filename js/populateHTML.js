@@ -4,13 +4,15 @@ import { default as data } from "../db/db.js";
 	fetching latest blogs from github.com
 */
 function fetchStatsFromGithub() {
-	fetch(
-		""
-	)
-		.then((response) => response.json())
-		.then((data) => {
-			populateBlogs(data["items"], "blogs", "read-more-blogs");
-		});
+	fetch("https://github.com/users/willianrattis/contributions") 
+		.then(async response => {
+		if (!response.ok) {
+			throw new Error(response.status)
+		}
+
+		let gitData = await response.json();
+		console.log(gitData);
+	});
 }
 
 function populateSkills(items, id) {
@@ -296,11 +298,9 @@ function getElement(tagName, className) {
 
 populateSkills(data.skills, "skills");
 
-fetchStatsFromGithub();
-
-populateProjects(data.projects.web, "web-projects");
-populateProjects(data.projects.software, "software-projects");
-populateProjects(data.projects.frontend, "android-projects");
+// populateProjects(data.projects.web, "web-projects");
+// populateProjects(data.projects.software, "software-projects");
+// populateProjects(data.projects.app, "app");
 
 populateExp_Edu(data.experience, "experience");
 populateExp_Edu(data.education, "education");
