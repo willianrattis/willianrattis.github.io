@@ -282,7 +282,7 @@ export default {
 		{
 			title: "Bacharél em Análise e Desenvolvimento de Sistemas",
 			duration: "",
-			subtitle: "Fauldade de Tecnologia do Estado de SP, FATEC",
+			subtitle: "Faculdade de Tecnologia do Estado de SP, FATEC",
 			details: [
 				"Sou bacharel em Análise e Desenvolvimento de Sistemas pela Faculdade de Tecnologia do Estado de São Paulo, uma instituição pública de ensino de  renome. Durante minha graduação, tive a oportunidade de estudar uma ampla gama de disciplinas, incluindo Programação, Algoritmos, Laboratório de Hardware, Matemática Discreta, Engenharia de Software, Linguagem de Programação, Sistemas de Informação, Cálculo, Estrutura de Dados, Estatística Aplicada, Banco de Dados, Segurança da Informação, Redes de Computadores, Sistemas Operacionais e Gestão de Equipes.",
 				"Minha formação em Análise e Desenvolvimento de Sistemas não somente me permitiu adquirir habilidades valiosas para atuar como desenvolvedor de software, mas também ampliou  minha visão e compreensão sobre as complexidades e possibilidades do desenvolvimento de software."
