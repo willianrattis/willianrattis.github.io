@@ -302,9 +302,9 @@
 var Accordion = function (el, multiple) {
 	this.el = el || {};
 	this.multiple = multiple || false;
-	// Variables privadas
+	// Private Variables 
 	var links = this.el.find(".link");
-	// Evento
+	// Event
 	links.on("click", { el: this.el, multiple: this.multiple }, this.dropdown);
 };
 
@@ -326,3 +326,12 @@ function enableDarkMode() {
 	var element = document.body;
 	element.classList.toggle("dark-mode");
 }
+// Fade out navbar element
+window.onscroll = function () {
+	var element = document.querySelector('.js-colorlib-nav-toggle');
+	if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+		element.classList.add("fade-out");
+	} else {
+		element.classList.remove("fade-out");
+	}
+};

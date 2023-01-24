@@ -2443,3 +2443,7 @@ footer ul {
 .badge-secondary {
 	background-color: #414040bc;
 }
+
+.fade-out {
+    opacity: 0.2;
+}
