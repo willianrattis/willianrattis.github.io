@@ -126,7 +126,7 @@ export default {
 			duration: "Dezembro 2022 - Presente",
 			subtitle: "Software Engineer III",
 			details: [
-				"Como desenvolvedor tive a oportunidade de construir sistemas escaláveis para o setor varejista, lidero equipes na análise, implementação e manutenção de aplicativos para Android e iOS, garantindo alta performance e escalabilidade. Utilizo ferramentas de teste de regressão, como Newman, para garantir a qualidade do software antes de sua implementação em produção.",
+				"Como desenvolvedor tive a oportunidade de construir sistemas escaláveis para o setor varejista, trabalhando com equipes na análise, implementação e manutenção de aplicativos para Android e iOS, garantindo alta performance e escalabilidade. Utilizo ferramentas de teste de regressão, como Newman, para garantir a qualidade do software antes de sua implementação em produção.",
 				"Neste projeto, utilizamos as seguintes tecnologias: Visual Studio Code, Git, ASP.NET Core (WEB API, Minimal APIs, Console, Packages), NET (6, 7), AKS, Auto Mapper, Git, JWT, MOQ, NLog, Polly, Prometheus, Redis, Refit, Swagger, WireMock .NET e xUnit .NET",
 				"Neste projeto utilizamos as ferramentas Visual Studio Code, Git, ASP.NET Core (WEB API) e NET Core (3.0, 5.0) para desenvolver soluções escaláveis e performáticas. Utilizo AKS para o deploy e gerenciamento de clusters de Kubernetes, e bibliotecas como Auto Mapper, C# 9.0 e 10, JWT, MOQ, NLog, Polly, Prometheus, Redis, Refit, Swagger, WireMock .NET e xUnit .NET para garantir a qualidade e testabilidade do meu código."
 			],
@@ -145,7 +145,7 @@ export default {
 			duration: "Agosto 2021 - Dezembro 2022",
 			subtitle: "Software Engineer",
 			details: [
-				"Como desenvolvedor em trabalhei com serviços distribuídos para o setor varejista, desenvolvendo APIs Gateway para atender aplicativos Mobile e SPAs. Meus projetos incluem a manutenção contínua dos serviços, garantindo alta disponibilidade e escalabilidade. Utilizo ferramentas de documentação, como OpenAPI (Swagger) e Postman, para garantir a clareza e facilidade de uso das APIs.",
+				"Como desenvolvedor em trabalhei com serviços distribuídos para o setor varejista, desenvolvendo APIs Gateway para atender aplicativos Mobile. Meus projetos incluem a manutenção contínua dos serviços, garantindo alta disponibilidade e escalabilidade. Utilizo ferramentas de documentação, como OpenAPI (Swagger) e Postman, para garantir a clareza e facilidade de uso das APIs.",
 				"Neste projeto utilizamos as ferramentas Visual Studio Code, Git, ASP.NET Core (WEB API) e NET Core (3.0, 5.0) para desenvolver soluções escaláveis e performáticas. Utilizo AKS para o deploy e gerenciamento de clusters de Kubernetes, e bibliotecas como Auto Mapper, C# 8.0 e 9, JWT, MOQ, NLog, Polly, Prometheus, Redis, Refit, Swagger, WireMock .NET e xUnit .NET para garantir a qualidade e testabilidade do meu código.",
 			],
 			tags: [
