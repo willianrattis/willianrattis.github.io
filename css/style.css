@@ -190,9 +190,10 @@ figure figcaption {
 }
 
 #colorlib-aside .author-img img {
-	height: 100%;
+	height: 150%;
 	object-fit: contain;
 	padding: 30px;
+	padding-left: 10px;
 }
 
 #colorlib-aside h1 {
@@ -219,6 +220,7 @@ figure figcaption {
 	display: block;
 	text-align: center;
 	color: #000;
+	padding-top: 20px;
 	padding-right: 0.3em;
 }
 
@@ -1355,6 +1357,17 @@ body.offcanvas .colorlib-nav-toggle {
 	color: #007ACC;
 }
 
+.progress-bar.color-10 {
+	background: #00A2EA;
+}
+
+.progress-bar.color-10:after {
+	background: #00A2EA;
+}
+
+.progress-bar.color-10 span {
+	color: #00A2EA;
+}
 .progress-wrap h3 {
 	padding-bottom: 2px;
 }
@@ -2242,9 +2255,7 @@ ul {
 	transform: rotate(180deg);
 }
 
-/**
- * Submenu
- -----------------------------*/
+/*** Submenu -----------------------------*/
 
 .submenu {
 	display: none;
@@ -2263,7 +2274,7 @@ ul {
 }
 
 .submenu li:hover {
-	background: rgba(217, 217, 217, 0.705);
+	background: rgba(218, 213, 203, 0.705);
 	box-shadow: -1px 1px 31px -20px rgba(0, 0, 0, 1);
 	border-radius: 1px;
 	color: rgb(68, 74, 77);
@@ -2308,9 +2319,7 @@ ul {
 
 span {
 	font-family: "Montserrat", sans-serif;
-	/* color: black; */
 	display: inline-block;
-	/* change the display type           */
 	margin: 0 5px;
 }
 
@@ -2320,7 +2329,6 @@ span {
 	padding: 5px;
 }
 
-/* Clearfix (clear floats) */
 .row-image::after {
 	content: "";
 	clear: both;
@@ -2446,4 +2454,59 @@ footer ul {
 
 .fade-out {
     opacity: 0.2;
+}
+.icon-dock {
+	display: flex;
+	overflow-x: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.icon-dock::-webkit-scrollbar {
+	display: none;
+}
+
+.dock-item {
+	flex: 0 0 auto;
+	padding: 0 10px;
+}
+
+.dock-icon {
+	max-height: 64px;
+	object-fit: contain;
+	transition: all 0.3s ease;
+}
+
+.dock-icon:hover {
+	max-height: 96px;
+	object-fit: contain;
+}
+
+.fade-in {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+	opacity: 1;
+}
+
+#icons {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	transition-delay: 1.3s;
+}
+
+body.loaded #icons {
+	opacity: 1;
+}
+
+.scroll-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	font-size: 24px;
+	cursor: pointer;
+	opacity: 0.5;
+	display: none;
 }
