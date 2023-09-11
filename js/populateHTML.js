@@ -41,69 +41,75 @@ function populateSkills(items, id) {
 	}
 }
 
-function populateProjects(items, id) {
-	let projectdesign = document.getElementById(id);
-	for (let i = 0; i < items.length; i++) {
-		let h4 = document.createElement("h4");
-		h4.className = "project-heading";
-		h4.innerHTML = items[i].projectName;
+function populateStackIcons(iconItems, id) {
+	const iconsDiv = document.getElementById(id);
+	const iconDock = document.createElement("div");
+	iconDock.className = "row icon-dock row-bottom-padded-sm animate-box fadeInLeft animated";
+	iconDock.setAttribute("data-animate-effect", "fadeInLeft");
 
-		let a = document.createElement("a");
-		a.href = items[i].preview;
-		a.target = "_blank";
-		a.append(h4);
+	for (let i = 0; i < iconItems.length; i++) {
+		const dockItem = document.createElement("div");
+		dockItem.className = "dock-item fade-in";
 
-		let img = document.createElement("img");
-		img.src = items[i].image;
-		img.className = "img-fluid";
+		const imgElement = document.createElement("img");
+		imgElement.src = iconItems[i].src;
+		imgElement.alt = iconItems[i].alt;
+		imgElement.className = "dock-icon";
 
-		let divResumeContentLeft = document.createElement("div");
-		divResumeContentLeft.className = "resume-content";
-		divResumeContentLeft.id = "left-div";
-		divResumeContentLeft.append(img);
+		dockItem.appendChild(imgElement);
+		iconDock.appendChild(dockItem);
+	}
 
-		let divResumeContentRight = document.createElement("div");
-		divResumeContentRight.className = "resume-content";
-		divResumeContentRight.id = "right-div";
+	iconsDiv.appendChild(iconDock);
+}
 
-		let p = document.createElement("p");
-		p.className = "project-description";
-		p.innerHTML = items[i].summary;
+function populateProjects(db, id) {
+	const accordion = document.getElementById(id);
 
-		let divSpan = document.createElement("div");
-		for (let k = 0; k < items[i].techStack.length; k++) {
-			let span = document.createElement("span");
-			span.className = "badge badge-secondary";
-			span.innerHTML = items[i].techStack[k];
-			divSpan.append(span);
+	for (let category in db.projects) {
+		const categoryList = document.createElement('li');
+
+		const categoryDiv = document.createElement('div');
+		categoryDiv.className = "link";
+		categoryDiv.innerHTML = `<p style="margin-bottom: 0px">${category}</p> <i class="fa fa-chevron-down"></i>`;
+		categoryList.appendChild(categoryDiv);
+
+		const projectsUl = document.createElement('ul');
+		projectsUl.className = "submenu";
+		projectsUl.id = `${category}-projects`;
+
+		for (let i = 0; i < db.projects[category].length; i++) {
+			const project = db.projects[category][i];
+
+			const projectLi = document.createElement('li');
+
+			const projectDiv = document.createElement('div');
+			projectDiv.className = "timeline-label";
+
+			const projectText = document.createElement('p');
+			projectText.className = "timeline-text";
+			projectText.innerHTML = project.summary;
+			projectDiv.appendChild(projectText);
+
+			const badgeDiv = document.createElement('div');
+
+			for (let tech of project.techStack) {
+				const badgeSpan = document.createElement('span');
+				badgeSpan.className = 'badge badge-secondary';
+				badgeSpan.innerText = tech;
+				badgeDiv.appendChild(badgeSpan);
+			}
+
+			projectDiv.appendChild(badgeDiv);
+			projectLi.appendChild(projectDiv);
+			projectsUl.appendChild(projectLi);
 		}
 
-		let divSubHeading = document.createElement("div");
-		divSubHeading.className = "sub-heading";
-		divSubHeading.append(p);
-		divSubHeading.append(divSpan);
-		divResumeContentRight.append(divSubHeading);
-
-		let divResumeItem = document.createElement("div");
-		divResumeItem.className = "resume-item";
-		divResumeItem.append(divResumeContentLeft);
-		divResumeItem.append(divResumeContentRight);
-		a.append(divResumeItem);
-
-		let divProjectCard = document.createElement("div");
-		divProjectCard.className = "project-card";
-		divProjectCard.append(a);
-
-		let li = document.createElement("li");
-		li.append(divProjectCard);
-		projectdesign.append(li);
-
-		if (i != items.length - 1) {
-			let hr = document.createElement('hr');
-			projectdesign.append(hr);
-		}
+		categoryList.appendChild(projectsUl);
+		accordion.appendChild(categoryList);
 	}
 }
+
 
 function populateBlogs(items, id, subid) {
 	let projectdesign = document.getElementById(id);
@@ -297,6 +303,21 @@ function getElement(tagName, className) {
 
 
 populateSkills(data.skills, "skills");
+populateStackIcons(data.icons, 'icons');
+populateProjects(data.projects, "projects")
+
+setTimeout(function () {
+	document.body.classList.add('loaded');
+
+	const dockItems = document.querySelectorAll('.dock-item');
+	dockItems.forEach((item, index) => {
+		setTimeout(() => {
+			item.classList.add('visible');
+		}, index * 700);
+	});
+}, 1000);
+
+
 
 // populateProjects(data.projects.web, "web-projects");
 // populateProjects(data.projects.software, "software-projects");
@@ -307,3 +328,38 @@ populateExp_Edu(data.education, "education");
 populateExp_Edu(data.courses, "courses");
 
 populateLinks(data.footer, "footer");
+
+document.addEventListener('DOMContentLoaded', () => {
+	const icons = document.querySelectorAll('.icon');
+
+	icons.forEach(icon => {
+		icon.addEventListener('mouseenter', function () {
+			this.style.fontSize = '36px'; // Increase font-size on mouse enter
+		});
+
+		icon.addEventListener('mouseleave', function () {
+			this.style.fontSize = '24px'; // Restore original font-size on mouse leave
+		});
+	});
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+	const dock = document.querySelector('.icon-dock');
+	let mousePosX = 0;
+
+	dock.addEventListener('mousemove', function (e) {
+		const rect = dock.getBoundingClientRect();
+		const x = e.clientX - rect.left;  // Coordenada X do mouse relativa ao elemento
+		const width = rect.width;
+
+		if (x < mousePosX) {
+			// Mover para a esquerda
+			dock.scrollBy(-10, 0);
+		} else if (x > mousePosX) {
+			// Mover para a direita
+			dock.scrollBy(10, 0);
+		}
+
+		mousePosX = x;
+	});
+});

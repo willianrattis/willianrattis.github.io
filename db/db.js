@@ -25,13 +25,13 @@ export default {
 			title: "Frameworks/Libraries",
 			skillName: "Angular, Reactjs",
 			color: "2",
-			percentage: "30",
+			percentage: "22",
 		},
 		{
 			title: "Backend",
 			skillName: "Nodejs, MongoDB",
 			color: "3",
-			percentage: "40",
+			percentage: "25",
 		},
 		{
 			title: "Clouds",
@@ -41,13 +41,13 @@ export default {
 		},
 		{
 			title: "Design",
-			skillName: "HTML, Bootstrap, SCSS",
+			skillName: "HTML, Bootstrap, CSS",
 			color: "5",
-			percentage: "70",
+			percentage: "40",
 		},
 		{
 			title: "Version Control",
-			skillName: "GitHub",
+			skillName: "Git, GitHub",
 			color: "6",
 			percentage: "70",
 		},
@@ -65,10 +65,34 @@ export default {
 		},
 		{
 			title: "Editor",
-			skillName: "VS Code",
+			skillName: "VS Code, Rider",
 			color: "9",
 			percentage: "77",
 		},
+		{
+			title: "Editor",
+			skillName: "Proxyman, Fiddler",
+			color: "10",
+			percentage: "60",
+		},
+	],
+	icons: [
+		{ src: "/images/stack-images/azure.png", alt: "Azure" },
+		{ src: "/images/stack-images/git.png", alt: "Git" },
+		{ src: "/images/stack-images/docker.png", alt: "Docker" },
+		{ src: "/images/stack-images/kubernetes.png", alt: "Kubernetes" },
+		{ src: "/images/stack-images/postman.png", alt: "Postman" },
+		{ src: "/images/stack-images/vscode.png", alt: "VSCode" },
+		{ src: "/images/stack-images/rider.png", alt: "Rider" },
+		{ src: "/images/stack-images/jira.png", alt: "Jira" },
+		{ src: "/images/stack-images/angular.png", alt: "Angular" },
+		{ src: "/images/stack-images/react.png", alt: "React" },
+		{ src: "/images/stack-images/html5.png", alt: "HTML5" },
+		{ src: "/images/stack-images/css3.png", alt: "CSS3" },
+		{ src: "/images/stack-images/js.png", alt: "JavaScript" },
+		{ src: "/images/stack-images/notion.png", alt: "Notion" },
+		{ src: "/images/stack-images/proxyman.png", alt: "Proxyman" },
+
 	],
 	projects: {
 		web: [
