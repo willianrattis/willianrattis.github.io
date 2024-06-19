@@ -1748,7 +1748,7 @@ body.offcanvas .colorlib-nav-toggle {
 	display: -moz-inline-stack;
 	display: inline-block;
 	zoom: 1;
-	*display: inline;
+	display: inline;
 }
 
 .colorlib-social li a {
@@ -1757,7 +1757,7 @@ body.offcanvas .colorlib-nav-toggle {
 	display: -moz-inline-stack;
 	display: inline-block;
 	zoom: 1;
-	*display: inline;
+	display: inline;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	-ms-border-radius: 7px;
@@ -2039,7 +2039,7 @@ body.offcanvas .colorlib-nav-toggle {
 	display: -moz-inline-stack;
 	display: inline-block;
 	zoom: 1;
-	*display: inline;
+	display: inline;
 	width: 30px;
 	height: 2px;
 	background-color: #000;

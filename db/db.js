@@ -2,17 +2,11 @@ export default {
 	bio: {
 		about: {
 			text: [
-				"Olá &#128075;",
-				"Meu nome é Willian. Atualmente eu trabalho como Engenheiro de Software especializado em NET. Graduado pela FATEC. Eu sou um desenvolvedor, curioso, gosto de aprender, trabalhar em equipe e propor soluções. Tenho um pefil proativo.",
-				"Eu sou um desenvolvedor, curioso, gosto de aprender, trabalhar em equipe e propor soluções. Tenho um pefil proativo.",
-				"Adoro café e pretendo experimentar todos.",
+				"Olá 👋 <br>Meu nome é Willian. Atualmente eu trabalho como <b>Engenheiro de Software</b> especializado em <b>NET</b>. Graduado pela FATEC.",
+				"Eu sou um <b>desenvolvedor</b> curioso, gosto de aprender, trabalhar em equipe e propor soluções. Tenho um pefil proativo.",
+				"Apaixonado pelo que faz <i class='fa fa-code'></i>"
 			],
-		},
-		contact: {
-			text: [
-				"Se você quiser entrar em contato comigo, seja para explorar uma tecnologia, um negócio ou apenas dizer oi, sinta-se livre para me enviar um e-mail em willian.rattis@gmail.com",
-			],
-		},
+		}
 	},
 	skills: [
 		{
@@ -77,22 +71,20 @@ export default {
 		},
 	],
 	icons: [
-		{ src: "/images/stack-images/azure.png", alt: "Azure" },
-		{ src: "/images/stack-images/git.png", alt: "Git" },
-		{ src: "/images/stack-images/docker.png", alt: "Docker" },
-		{ src: "/images/stack-images/kubernetes.png", alt: "Kubernetes" },
-		{ src: "/images/stack-images/postman.png", alt: "Postman" },
-		{ src: "/images/stack-images/vscode.png", alt: "VSCode" },
-		{ src: "/images/stack-images/rider.png", alt: "Rider" },
-		{ src: "/images/stack-images/jira.png", alt: "Jira" },
-		{ src: "/images/stack-images/angular.png", alt: "Angular" },
-		{ src: "/images/stack-images/react.png", alt: "React" },
-		{ src: "/images/stack-images/html5.png", alt: "HTML5" },
-		{ src: "/images/stack-images/css3.png", alt: "CSS3" },
-		{ src: "/images/stack-images/js.png", alt: "JavaScript" },
-		{ src: "/images/stack-images/notion.png", alt: "Notion" },
-		{ src: "/images/stack-images/proxyman.png", alt: "Proxyman" },
-
+		{ src: "/images/stack-images/azure.svg", alt: "Azure" },
+		{ src: "/images/stack-images/git.svg", alt: "Git" },
+		{ src: "/images/stack-images/docker.svg", alt: "Docker" },
+		{ src: "/images/stack-images/kubernetes.svg", alt: "Kubernetes" },
+		{ src: "/images/stack-images/postman.svg", alt: "Postman" },
+		{ src: "/images/stack-images/vscode.svg", alt: "VSCode" },
+		{ src: "/images/stack-images/rider.svg", alt: "Rider" },
+		{ src: "/images/stack-images/jira.svg", alt: "Jira" },
+		{ src: "/images/stack-images/angular.svg", alt: "Angular" },
+		{ src: "/images/stack-images/react.svg", alt: "React" },
+		{ src: "/images/stack-images/html5.svg", alt: "HTML5" },
+		{ src: "/images/stack-images/css3.svg", alt: "CSS3" },
+		{ src: "/images/stack-images/js.svg", alt: "JavaScript" },
+		{ src: "/images/stack-images/notion.svg", alt: "Notion" },
 	],
 	projects: {
 		web: [
@@ -119,8 +111,7 @@ export default {
 				image: "",
 				summary:
 					"Nos últimos anos, dediquei-me a desenvolver sistemas distribuídos e escaláveis, utilizando tecnologias populares como AKS, Kubernetes e Docker, junto com as mais recentes atualizações do framework .NET. Recentemente, utilizei essas tecnologias para construir um sistema para uma empresa de comércio eletrônico.",
-				preview:
-					"",
+				preview: "",
 				techStack: [
 					"NET",
 					"ASP.NET Web API",
@@ -436,6 +427,13 @@ export default {
 				"SQL Server"
 			],
 			icon: "code",
+		},
+	],
+	contact: [
+		{
+			text: [
+				"Se você quiser entrar em contato comigo, seja para explorar uma tecnologia, um negócio ou apenas dizer oi, sinta-se livre para me enviar um e-mail em <a href='mailto:willian.rattis@gmail.com'>willian.rattis@gmail.com</a>",
+			],
 		},
 	],
 	footer: [
