@@ -1,0 +1,218 @@
+// Modern App Entry Point
+import data from '../db/db.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    // console.log('Modern Portfolio Loaded. Initializing systems...', data);
+
+    initVisuals();
+    populateContent();
+    initInteractions();
+    initAOS();
+});
+
+function initVisuals() {
+    // 1. Vanta JS - Net Effect
+    try {
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x66fcf1,       // --primary-neon
+            backgroundColor: 0x0b0c10, // --bg-dark
+            points: 10.00,
+            maxDistance: 22.00,
+            spacing: 18.00
+        });
+    } catch (e) {
+        console.warn("Vanta JS failed to load", e);
+    }
+
+    // 2. Typed JS
+    // Extract user roles from bio or hardcode for effect
+    new Typed('#typing-text', {
+        strings: ['Cloud Architect', 'DevOps Enthusiast', '.NET Specialist', 'Full Stack Developer'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true,
+        smartBackspace: true
+    });
+}
+
+function populateContent() {
+    // --- About ---
+    const aboutText = document.querySelector('#about .about-text');
+    if (data.bio && data.bio.about) {
+        let html = '';
+        data.bio.about.text.forEach(p => {
+            html += `<p>${p}</p>`;
+        });
+        aboutText.innerHTML = html;
+    }
+
+    // --- Skills ---
+    const skillsContainer = document.getElementById('skills-container');
+    if (data.skills) {
+        data.skills.forEach(skill => {
+            const card = document.createElement('div');
+            card.className = 'skill-card';
+            card.setAttribute('data-aos', 'fade-up');
+
+            // Generate valid class or variable for color if needed, simplified here
+            card.innerHTML = `
+                <span class="skill-name">${skill.skillName}</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: ${skill.percentage}%"></div>
+                </div>
+            `;
+            skillsContainer.appendChild(card);
+        });
+    }
+
+    // --- Projects ---
+    const projectsContainer = document.getElementById('projects-container');
+    if (data.projects) {
+        // Flatten categories for modern grid
+        const allProjects = [
+            ...data.projects.web.map(p => ({ ...p, category: 'Web' })),
+            ...data.projects.software.map(p => ({ ...p, category: 'Software' })),
+            ...data.projects.app.map(p => ({ ...p, category: 'App' }))
+        ];
+
+        allProjects.forEach(project => {
+            // Skip empty projects (some in db.js seemed empty)
+            if (!project.summary) return;
+
+            const card = document.createElement('div');
+            card.className = 'project-card';
+            card.setAttribute('data-tilt', ''); // Activation for Tilt.js
+            card.setAttribute('data-aos', 'fade-up');
+
+            let techTags = '';
+            if (project.techStack) {
+                project.techStack.forEach(t => techTags += `<span class="tech-tag">#${t}</span>`);
+            }
+
+            // Fallback content if title missing
+            const title = project.projectName || project.category + " Project";
+
+            card.innerHTML = `
+                <div class="project-content">
+                    <span class="project-category">${project.category}</span>
+                    <h3 class="project-title">${title}</h3>
+                    <p class="project-desc">${project.summary}</p>
+                    <div class="project-tech">${techTags}</div>
+                </div>
+            `;
+            projectsContainer.appendChild(card);
+        });
+    }
+
+    // --- Experience / Education Combined Timeline ---
+    const timeline = document.getElementById('experience-timeline');
+
+    // Merge experience and education, sort by date? 
+    // Data structures are slightly different but similar enough.
+    // For now, let's just append Experience then Education section titles within timeline
+
+    // Helper for timeline item
+    const createTimelineItem = (item, type) => {
+        const div = document.createElement('div');
+        div.className = 'timeline-item';
+        div.setAttribute('data-aos', 'fade-left');
+
+        // Icon logic (simplified)
+        // item.icon is like 'shopping-bag', 'code'
+
+        let detailsHtml = '<ul>';
+        if (item.details) {
+            item.details.forEach(d => detailsHtml += `<li>${d}</li>`);
+        }
+        detailsHtml += '</ul>';
+
+        div.innerHTML = `
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">${item.duration || ''}</span>
+            <div class="timeline-content">
+                <h3>${item.title}</h3>
+                <h4>${item.subtitle || ''}</h4>
+                ${detailsHtml}
+            </div>
+        `;
+        return div;
+    };
+
+    if (data.experience) {
+        data.experience.forEach(item => timeline.appendChild(createTimelineItem(item, 'exp')));
+    }
+
+    // Add Education Header in Timeline
+    // (Optional: visual separation)
+
+    if (data.education) {
+        data.education.forEach(item => timeline.appendChild(createTimelineItem(item, 'edu')));
+    }
+}
+
+function initInteractions() {
+    // Mobile Nav Toggle
+    const toggle = document.querySelector('.mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = 'rgba(11, 12, 16, 0.95)';
+                navLinks.style.padding = '2rem';
+            }
+        });
+    }
+
+    // Initialize Tilt explicitly if needed, usually auto-inits with data-tilt attribute
+    if (typeof VanillaTilt !== 'undefined') {
+        VanillaTilt.init(document.querySelectorAll(".project-card"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.1,
+        });
+    }
+}
+
+function initAOS() {
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+    }
+}
+
+function initNavigation() {
+    const nav = document.querySelector('.navbar');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+    });
+}
