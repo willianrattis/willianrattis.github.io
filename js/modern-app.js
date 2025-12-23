@@ -27,9 +27,9 @@ function initVisuals() {
             scaleMobile: 1.00,
             color: 0x66fcf1,       // --primary-neon
             backgroundColor: 0x0b0c10, // --bg-dark
-            points: 10.00,
-            maxDistance: 22.00,
-            spacing: 18.00
+            points: 8.00,
+            maxDistance: 20.00,
+            spacing: 24.00
         });
     } catch (e) {
         console.warn("Vanta JS failed to load", e);
