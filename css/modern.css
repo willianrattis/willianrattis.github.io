@@ -390,6 +390,12 @@ a:hover {
     gap: 1.5rem;
 }
 
+@media (min-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 .skill-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
