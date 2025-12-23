@@ -36,12 +36,13 @@
             <span class="mono-font">&lt;Rattis /&gt;</span>
          </div>
          <ul class="nav-links">
-            <li><a href="#hero">Start</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Stack</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#experience">XP</a></li>
-            <li><a href="#contact">Conectar</a></li>
+            <li><a href="#hero" data-i18n="nav.start">Start</a></li>
+            <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Stack</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">XP</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Conectar</a></li>
+            <li><button id="lang-toggle" class="btn-lang" aria-label="Switch Language">🇺🇸 EN</button></li>
          </ul>
          <div class="mobile-toggle">
             <i class="fas fa-bars"></i>
@@ -58,13 +59,13 @@
                <img src="images/me-memoji.png" alt="Willian Rattis" class="profile-img floating">
             </div>
             <h1 class="glitch-text">Willian Rattis</h1>
-            <h2 class="subtitle mono-font">Senior Software Engineer</h2>
+            <h2 class="subtitle mono-font" data-i18n="hero.role">Senior Software Engineer</h2>
             <div class="typewriter">
                <span id="typing-text"></span>
             </div>
             <div class="cta-buttons">
-               <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-               <a href="#contact" class="btn btn-outline">Contato</a>
+               <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProject">Ver Projetos</a>
+               <a href="#contact" class="btn btn-outline" data-i18n="hero.ctaContact">Contato</a>
             </div>
          </div>
       </div>
@@ -78,7 +79,7 @@
    <section id="about" class="section-padding">
       <div class="container">
          <div class="section-header" data-aos="fade-right">
-            <h2><span class="hash">#</span> Sobre Mim</h2>
+            <h2><span class="hash">#</span> <span data-i18n="headers.about">Sobre Mim</span></h2>
          </div>
          <div class="row glass-panel" data-aos="fade-up">
             <div class="about-text">
@@ -94,7 +95,7 @@
    <section id="skills" class="section-padding">
       <div class="container">
          <div class="section-header" data-aos="fade-right">
-            <h2><span class="hash">#</span> Tech Stack</h2>
+            <h2><span class="hash">#</span> <span data-i18n="headers.skills">Tech Stack</span></h2>
          </div>
          <div class="skills-grid" id="skills-container">
             <!-- Javascript will populate this -->
@@ -106,7 +107,7 @@
    <section id="projects" class="section-padding">
       <div class="container">
          <div class="section-header" data-aos="fade-right">
-            <h2><span class="hash">#</span> Projetos</h2>
+            <h2><span class="hash">#</span> <span data-i18n="headers.projects">Projetos</span></h2>
          </div>
          <div class="projects-grid" id="projects-container">
             <!-- Javascript will populate this -->
@@ -118,7 +119,7 @@
    <section id="experience" class="section-padding">
       <div class="container">
          <div class="section-header" data-aos="fade-right">
-            <h2><span class="hash">#</span> Jornada</h2>
+            <h2><span class="hash">#</span> <span data-i18n="headers.experience">Jornada</span></h2>
          </div>
          <div class="timeline" id="experience-timeline">
             <!-- Javascript will populate this -->
@@ -129,10 +130,11 @@
    <!-- Contact Section -->
    <section id="contact" class="section-padding">
       <div class="container center-flex column">
-         <h2 data-aos="fade-up">Vamos Construir o Futuro?</h2>
-         <p data-aos="fade-up" data-aos-delay="100">Estou sempre aberto a novas oportunidades e desafios.</p>
+         <h2 data-aos="fade-up" data-i18n="headers.contact">Vamos Construir o Futuro?</h2>
+         <p data-aos="fade-up" data-aos-delay="100" data-i18n="headers.contactDesc">Estou sempre aberto a novas
+            oportunidades e desafios.</p>
          <a href="mailto:willianrattis@gmail.com" class="btn btn-primary big-btn" data-aos="zoom-in">
-            <i class="fas fa-paper-plane"></i> Mande um Hello
+            <i class="fas fa-paper-plane"></i> <span data-i18n="headers.emailBtn">Mande um Hello</span>
          </a>
 
          <div class="social-links" data-aos="fade-up" data-aos-delay="200">
@@ -144,7 +146,7 @@
 
    <footer>
       <div class="container text-center">
-         <p class="mono-font">Designed & Built by Willian Rattis © 2025</p>
+         <p class="mono-font" data-i18n="footer.copyright">Designed & Built by Willian Rattis © 2025</p>
       </div>
    </footer>
 

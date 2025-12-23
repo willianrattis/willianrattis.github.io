@@ -342,6 +342,28 @@ a:hover {
     width: 100%;
 }
 
+.btn-lang {
+    background: transparent;
+    border: 1px solid var(--primary-neon);
+    color: var(--primary-neon);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    outline: none;
+}
+
+.btn-lang:hover {
+    background: var(--primary-neon);
+    color: var(--bg-dark);
+    box-shadow: 0 0 10px rgba(102, 252, 241, 0.4);
+}
+
 .mobile-toggle {
     display: none;
     color: var(--text-highlight);

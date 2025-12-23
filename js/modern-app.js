@@ -1,13 +1,16 @@
 // Modern App Entry Point
-import data from '../db/db.js';
+import db from '../db/db.js';
+import { getCurrentLang, setLanguage, updateStaticContent } from './i18n.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // console.log('Modern Portfolio Loaded. Initializing systems...', data);
 
     initVisuals();
+    updateStaticContent(); // Initial static text render
     populateContent();
     initInteractions();
     initAOS();
+    updateLangButton(getCurrentLang());
 });
 
 function initVisuals() {
@@ -46,8 +49,18 @@ function initVisuals() {
 
 function populateContent() {
     // --- About ---
+    const langKey = getCurrentLang() === 'en-US' ? 'en' : 'pt';
+    const data = db[langKey];
+
+    // Clear previous dynamic content to allow re-render
+    document.querySelector('#about .about-text').innerHTML = '';
+    document.getElementById('skills-container').innerHTML = '';
+    document.getElementById('projects-container').innerHTML = '';
+    document.getElementById('experience-timeline').innerHTML = '';
+
+    // --- About ---
     const aboutText = document.querySelector('#about .about-text');
-    if (data.bio && data.bio.about) {
+    if (data && data.bio && data.bio.about) {
         let html = '';
         data.bio.about.text.forEach(p => {
             html += `<p>${p}</p>`;
@@ -187,14 +200,55 @@ function initInteractions() {
         });
     }
 
+    initTilt();
+
+    // Language Toggle
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            const current = getCurrentLang();
+            const newLang = current === 'en-US' ? 'pt-BR' : 'en-US';
+            setLanguage(newLang);
+            updateLangButton(newLang);
+            populateContent();
+
+            // Re-init Tilt for new elements
+            initTilt();
+
+            // Re-init AOS to handle layout changes
+            setTimeout(() => AOS.refresh(), 100);
+        });
+    }
+}
+
+function initTilt() {
     // Initialize Tilt explicitly if needed, usually auto-inits with data-tilt attribute
     if (typeof VanillaTilt !== 'undefined') {
+        // Destroy previous instances if any to prevent memory leaks or double binding (though VanillaTilt usually handles init safely)
+        const cards = document.querySelectorAll(".project-card");
+        cards.forEach(card => {
+            if (card.vanillaTilt) {
+                card.vanillaTilt.destroy();
+            }
+        });
+
         VanillaTilt.init(document.querySelectorAll(".project-card"), {
             max: 15,
             speed: 400,
             glare: true,
             "max-glare": 0.1,
         });
+    }
+}
+
+function updateLangButton(lang) {
+    const btn = document.getElementById('lang-toggle');
+    if (btn) {
+        if (lang === 'en-US') {
+            btn.innerText = '🇧🇷 PT';
+        } else {
+            btn.innerText = '🇺🇸 EN';
+        }
     }
 }
 
