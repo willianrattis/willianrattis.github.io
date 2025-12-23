@@ -100,6 +100,20 @@ a:hover {
     padding: 100px 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-flex.column {
+    flex-direction: column;
+}
+
 .neon-text {
     color: var(--primary-neon);
     text-shadow: 0 0 5px rgba(102, 252, 241, 0.5);
@@ -515,6 +529,50 @@ a:hover {
     left: 0;
     color: var(--primary-neon);
     font-family: var(--font-mono);
+}
+
+/* Contact Section */
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 2.5rem;
+}
+
+.big-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.social-links a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.social-links a:hover {
+    background: var(--primary-neon);
+    border-color: var(--primary-neon);
+    color: var(--bg-dark);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(102, 252, 241, 0.4);
 }
 
 /* Footer */

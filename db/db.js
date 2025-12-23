@@ -160,8 +160,8 @@ export default {
 			duration: "Dezembro 2022 - Dezembro 2024",
 			subtitle: "Senior Software Engineer",
 			details: [
-				"Internalizado como Sênior após excelente desempenho na consultoria. Atuei no backend (.NET Core) do time de aplicativos Mobile, focando na Home e PDP (Página de Produto). Lideré migrações sequenciais do .NET (v3 até v9) e introduzi a cultura de testes automatizados de API com Postman Newman na esteira DevOps, elevando a qualidade das entregas.",
-				"Projetei e implementei uma nova arquitetura desacoplada para Catálogo e Preço, permitindo estratégias de cache híbridas (Redis para dados voláteis, MongoDB para estruturados) e unificando a precificação entre canais. Isso resultou em ganhos massivos de performance e permitiu diferenciação de preços por canal.",
+				"Internalizado como Sênior após excelente desempenho na consultoria. Atuei no backend (.NET Core) do time de aplicativos Mobile, focando na Home e PDP (Página de Produto). Liderei migrações sequenciais do .NET (v3 até v9) e introduzi a cultura de testes automatizados de API com Postman Newman na esteira DevOps, elevando a qualidade das entregas.",
+				"Liderei o desacoplamento arquitetural entre Catálogo e Preço, permitindo estratégias distintas de performance: aplicação de cache para dados de catálogo (menos voláteis) e consultas em tempo real para preços (dados quentes e estratégicos). Essa mudança eliminou divergências de valor na jornada do cliente e viabilizou tecnicamente a precificação exclusiva para o aplicativo.",
 				"Participei ativamente de 5 Black Fridays (evento de tráfego massivo), utilizando Dynatrace, ELK e Grafana para observabilidade, e implementando padrões de resiliência como Circuit Breaker (Polly) em ambiente Kubernetes (AKS). Provei a eficácia do MongoDB como alternativa de cache para APIs de Imagens de alta demanda."
 			],
 			tags: [
