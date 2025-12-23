@@ -1,300 +1,171 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Willian Rattis</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="Portfolio webpage de Willian" />
-   <meta name="keywords"
-      content="portfolio,website,personal website,github,projects,computer science and engineering" />
-   <!--------------------Ícones Midias Sociais------------------------>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-   <link rel="icon" type="image/png" href="/images/logo.png">
-   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
-   <!-- Animate.css -->
-   <link rel="stylesheet" href="css/animate.min.css">
-   <!-- Bootstrap  -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <!-- Theme style  -->
-   <link rel="stylesheet" href="css/style.min.css">
-   <!-- Modernizr JS -->
-   <script src="js/modernizr-2.6.2.min.js"></script>
-   <script type="module" src="js/populateHTML.js"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Willian Rattis | Software Engineer</title>
+   <meta name="description" content="Portfolio de Engenharia de Software focada em Modernidade e IA.">
+   <meta name="keywords" content="software engineer, .net, c#, angular, react, ai, portfolio">
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet">
+
+   <!-- Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <!-- Libraries CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/modern.css">
+
+   <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
 <body>
-   <div id="colorlib-page">
-      <div class="container-wrap">
-         <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false" aria-controls="navbar"><i></i></a>
-         <!--------------------[START] Barra Lateral-------------------------->
-         <aside id="colorlib-aside" role="complementary" class="border js-fullheight no-print" style="height: 975px;">
-            <div class="text-center">
-               <div class="author-img">
-                  <img src="images/me-memoji.png">
-               </div>
-               <h1 id="colorlib-logo"><a href="./index.html">Willian Rattis</a>
-               </h1>
-            </div>
-            <nav id="colorlib-main-menu" role="navigation" class="navbar" style="padding-top: 2em">
-               <div id="navbar" class="collapse">
-                  <ul>
-                     <li class="active">
-                        <a href="#" data-nav-section="about">Sobre</a>
-                     </li>
-                     <li>
-                        <a href="#" data-nav-section="skills">Habilidades</a>
-                     </li>
-                     <li>
-                        <a href="#" data-nav-section="projects">Projetos</a>
-                     </li>
-                     <li>
-                        <a href="#" data-nav-section="experience">Experiência</a>
-                     </li>
-                     <li>
-                        <a href="#" data-nav-section="education">Educação</a>
-                     </li>
-                     <li>
-                        <a href="#" data-nav-section="courses">Cursos</a>
-                     </li>
-                     <li>
-                        <a href="#" data-nav-section="contact">Contato</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </aside>
-         <!--------------------[END] Barra Lateral---------------------------->
-         <!--------------------[START] Página Principal------------------------->
-         <div id="colorlib-main">
-            <!--------------------[START] Sobre-------------------------->
-            <section class="colorlib-about" data-section="about">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-about animate-box" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Sobre</h1>
-                        <p>Olá &#128075; <br>Meu nome é Willian. Atualmente eu trabalho como
-                           <b>Engenheiro de Software</b> especializado em
-                           <b>NET</b>. Graduado pela FATEC.
-                        </p>
-                        <p>Eu sou um <b>desenvolvedor</b> curioso, gosto de aprender,
-                           trabalhar em equipe e propor soluções. Tenho um pefil proativo.</p>
-                        <p class="finalText">Apaixonado pelo que faz <i class="fa fa-code"></i></p>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] Sobre---------------------------->
-            <!--------------------[START] Habilidades---------------------------->
-            <section class="colorlib-skills" data-section="skills">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated"
-                     data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Habilidades</h1>
-                     </div>
-                  </div>
-                  <div id="skills" class="row">
 
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] Habilidades------------------------------>
-            <!--------------------[START] Stack---------------------------->
-            <section class="colorlib-skills" data-section="icons">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                  </div>
-                  <div id="icons" class="row">
-            
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] Stack---------------------------->
-            <!--------------------[START] Projetos-------------------------->
-            <section class="colorlib-projects no-print" data-section="projects">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Projetos</h1>
-                     </div>
-                  </div>
-                  <ul id="accordion" class="accordion animate-box" data-animate-effect="fadeInLeft">
-                     <li>
-                        <div class="link">
-                           <p style="margin-bottom: 0px">Projetos Web</p>
-                           <i class="fa fa-chevron-down"></i>
-                        </div>
-                        <ul id="web-projects" class="submenu">
-                           <li>
-                              <div class="timeline-label">
-                                 <p class="timeline-text">
-                                    Como desenvolvedor web, tenho trabalhado com uma variedade de tecnologias ao longo
-                                    dos anos. Comecei minha carreira
-                                    trabalhando com tecnologias precursoras da web, como ASP.NET Web Forms, mas
-                                    recentemente me especializei em
-                                    frameworks modernos como Angular e React.
-                                 </p>
-                                 <div>
-                                    <span class="badge badge-secondary">Angular</span>
-                                    <span class="badge badge-secondary">React</span>
-                                    <span class="badge badge-secondary">ASP.NET MVC</span>
-                                    <span class="badge badge-secondary">HTML5</span>
-                                    <span class="badge badge-secondary">Bootstrap</span>
-                                    <span class="badge badge-secondary">JavaScript</span>
-                                    <span class="badge badge-secondary">CSS</span>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </li>
-                     <li>
-                        <div class="link">
-                           <p style="margin-bottom: 0px">Web APIs</p>
-                           <i class="fa fa-chevron-down"></i>
-                        </div>
-                        <ul id="software-projects" class="submenu">
-                           <li>
-                              <div class="timeline-label">
-                                 <p class="timeline-text">
-                                    Nos últimos anos, dediquei-me a desenvolver sistemas distribuídos e escaláveis,
-                                    utilizando tecnologias populares como
-                                    AKS, Kubernetes e Docker, junto com as mais recentes atualizações do framework .NET.
-                                    Recentemente, utilizei essas
-                                    tecnologias para construir um sistema para uma empresa de comércio eletrônico.
-                                 </p>
-                                 <div>
-                                    <span class="badge badge-secondary">NET</span>
-                                    <span class="badge badge-secondary">ASP.NET Web API</span>
-                                    <span class="badge badge-secondary">Swagger</span>
-                                    <span class="badge badge-secondary">Microserviços</span>
-                                    <span class="badge badge-secondary">Kafka</span>
-                                    <span class="badge badge-secondary">MongoDb</span>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </li>
-                     <li>
-                        <div class="link">
-                           <p style="margin-bottom: 0px">APP</p>
-                           <i class="fa fa-chevron-down"></i>
-                        </div>
-                        <ul id="app" class="submenu">
-                           <li>
-                              <div class="timeline-label">
-                                 <p class="timeline-text">
-                                    Durante os últimos três anos, tive a oportunidade de trabalhar junto com
-                                    desenvolvimento de aplicativos nativos tanto
-                                    para iOS quanto para Android. Essa jornada me permitiu compreender as
-                                    particularidades desses dispositivos, além de
-                                    me familiarizar com a necessidade de construir APIs Gateways (BFF) para atender
-                                    esses dispositivos.
-                                 </p>
-                                 <div>
-                                    <span class="badge badge-secondary">iOS</span>
-                                    <span class="badge badge-secondary">Android</span>
-                                    <span class="badge badge-secondary">BFF</span>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-               </div>
-            </section>
-            <!--------------------[END] Projetos---------------------------->
-            <!--------------------[START] Experiência------------------->
-            <section class="colorlib-experience" data-section="experience">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated"
-                     data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Experiência<span></span>
-                        </h1>
-                     </div>
-                  </div>
-                  <div class="timeline-centered" id="experience">
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] Experiência--------------------->
-            <!--------------------[START] Educação------------------------->
-            <section class="colorlib-education" data-section="education">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated"
-                     data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Educação</h1>
-                     </div>
-                  </div>
-                  <div class="timeline-centered" id="education">
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] Educação--------------------------->
-            <!--------------------[START] Cursos------------------------->
-            <section class="colorlib-education" data-section="courses">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated"
-                     data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Formações</h1>
-                     </div>
-                  </div>
-                  <div class="timeline-centered" id="courses">
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] Cursos--------------------------->
-            <!--------------------[START] Contato--------------------------->
-            <section class="colorlib-contact" data-section="contact">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Contato</h1>
-                     </div>
-                     <p>
-                        Se você quiser entrar em contato comigo, seja para explorar uma tecnologia, um negócio ou apenas
-                        dizer oi, sinta-se
-                        livre para me enviar um e-mail em
-                        <a href="mailto:willian.rattis@gmail.com">willian.rattis@gmail.com</a>
-                     </p>
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] Contato----------------------------->
-            <!--------------------[START] Rodapé---------------------------->
-            <section class="colorlib-footer no-print" data-section="footer">
-               <div class="colorlib-narrow-content">
-                  <footer class="footer" id="footer">
-                  </footer>
-               </div>
-            </section>
-            <!--------------------[END] Rodapé------------------------------>
+   <!-- Navigation -->
+   <nav class="navbar glass-panel">
+      <div class="container nav-content">
+         <div class="logo">
+            <span class="mono-font">&lt;Rattis /&gt;</span>
          </div>
-         <!-----[END] Página Principal--------->
+         <ul class="nav-links">
+            <li><a href="#hero" data-i18n="nav.start">Start</a></li>
+            <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Stack</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">XP</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Conectar</a></li>
+            <li><button id="lang-toggle" class="btn-lang" aria-label="Switch Language">🇺🇸 EN</button></li>
+         </ul>
+         <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+         </div>
       </div>
-   </div>
-   <!-- jQuery -->
-   <script src="js/jquery.min.js"></script>
-   <!-- jQuery Easing -->
-   <script src="js/jquery.easing.1.3.js"></script>
-   <!-- Bootstrap -->
-   <script src="js/bootstrap.min.js"></script>
-   <!-- Waypoints -->
-   <script src="js/jquery.waypoints.min.js"></script>
-   <!-- Flexslider -->
-   <script src="js/jquery.flexslider-min.js"></script>
-   <!-- Counters -->
-   <script src="js/jquery.countTo.js"></script>
-   <!-- MAIN JS -->
-   <script src="js/main.js"></script>
+   </nav>
+
+   <!-- Hero Section -->
+   <section id="hero" class="hero-section">
+      <div id="vanta-bg" class="hero-bg"></div>
+      <div class="container hero-content center-flex">
+         <div class="text-center" data-aos="fade-up">
+            <div class="profile-img-container">
+               <img src="images/me-memoji.png" alt="Willian Rattis" class="profile-img floating">
+            </div>
+            <h1 class="glitch-text">Willian Rattis</h1>
+            <h2 class="subtitle mono-font" data-i18n="hero.role">Senior Software Engineer</h2>
+            <div class="typewriter">
+               <span id="typing-text"></span>
+            </div>
+            <div class="cta-buttons">
+               <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProject">Ver Projetos</a>
+               <a href="#contact" class="btn btn-outline" data-i18n="hero.ctaContact">Contato</a>
+            </div>
+         </div>
+      </div>
+
+      <div class="scroll-down">
+         <i class="fas fa-chevron-down bounce"></i>
+      </div>
+   </section>
+
+   <!-- About Section -->
+   <section id="about" class="section-padding">
+      <div class="container">
+         <div class="section-header" data-aos="fade-right">
+            <h2><span class="hash">#</span> <span data-i18n="headers.about">Sobre Mim</span></h2>
+         </div>
+         <div class="row glass-panel" data-aos="fade-up">
+            <div class="about-text">
+               <!-- Content to be migrated -->
+               <p>Olá! Sou um engenheiro apaixonado por transformar problemas complexos em soluções elegantes e
+                  escaláveis.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Skills Section -->
+   <section id="skills" class="section-padding">
+      <div class="container">
+         <div class="section-header" data-aos="fade-right">
+            <h2><span class="hash">#</span> <span data-i18n="headers.skills">Tech Stack</span></h2>
+         </div>
+         <div class="skills-grid" id="skills-container">
+            <!-- Javascript will populate this -->
+         </div>
+      </div>
+   </section>
+
+   <!-- Projects Section -->
+   <section id="projects" class="section-padding">
+      <div class="container">
+         <div class="section-header" data-aos="fade-right">
+            <h2><span class="hash">#</span> <span data-i18n="headers.projects">Projetos</span></h2>
+         </div>
+         <div class="projects-grid" id="projects-container">
+            <!-- Javascript will populate this -->
+         </div>
+      </div>
+   </section>
+
+   <!-- Experience/Education Timeline -->
+   <section id="experience" class="section-padding">
+      <div class="container">
+         <div class="section-header" data-aos="fade-right">
+            <h2><span class="hash">#</span> <span data-i18n="headers.experience">Jornada</span></h2>
+         </div>
+         <div class="timeline" id="experience-timeline">
+            <!-- Javascript will populate this -->
+         </div>
+      </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="section-padding">
+      <div class="container center-flex column">
+         <h2 data-aos="fade-up" data-i18n="headers.contact">Vamos Construir o Futuro?</h2>
+         <p data-aos="fade-up" data-aos-delay="100" data-i18n="headers.contactDesc">Estou sempre aberto a novas
+            oportunidades e desafios.</p>
+         <a href="mailto:willianrattis@gmail.com" class="btn btn-primary big-btn" data-aos="zoom-in">
+            <i class="fas fa-paper-plane"></i> <span data-i18n="headers.emailBtn">Mande um Hello</span>
+         </a>
+
+         <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://github.com/willianrattis" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/willianrattis" target="_blank"><i class="fab fa-linkedin"></i></a>
+         </div>
+      </div>
+   </section>
+
+   <footer>
+      <div class="container text-center">
+         <p class="mono-font" data-i18n="footer.copyright">Designed & Built by Willian Rattis © 2025</p>
+      </div>
+   </footer>
+
+   <!-- Scripts -->
+   <!-- Three.js & Vanta for Background -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+   <!-- AOS Animation -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <!-- Typed.js -->
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+   <!-- Tilt.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+   <!-- App Logic -->
+   <script type="module" src="js/modern-app.js"></script>
 </body>
 
 </html>
