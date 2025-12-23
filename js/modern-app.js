@@ -135,6 +135,13 @@ function populateContent() {
         }
         detailsHtml += '</ul>';
 
+        let tagsHtml = '';
+        if (item.tags) {
+            tagsHtml = '<div class="project-tech" style="margin-top: 1rem;">';
+            item.tags.forEach(t => tagsHtml += `<span class="tech-tag">#${t}</span>`);
+            tagsHtml += '</div>';
+        }
+
         div.innerHTML = `
             <div class="timeline-dot"></div>
             <span class="timeline-date">${item.duration || ''}</span>
@@ -142,6 +149,7 @@ function populateContent() {
                 <h3>${item.title}</h3>
                 <h4>${item.subtitle || ''}</h4>
                 ${detailsHtml}
+                ${tagsHtml}
             </div>
         `;
         return div;

@@ -127,7 +127,7 @@ export default {
 				projectName: "",
 				image: "",
 				summary:
-					"Durante os últimos três anos, tive a oportunidade de trabalhar junto com desenvolvimento de aplicativos nativos tanto para iOS quanto para Android. Essa jornada me permitiu compreender as particularidades desses dispositivos, além de me familiarizar com a necessidade de construir APIs Gateways (BFF) para atender esses dispositivos.",
+					"Durante os últimos quatro anos, tive a oportunidade de trabalhar junto com desenvolvimento de aplicativos nativos tanto para iOS quanto para Android. Essa jornada me permitiu compreender as particularidades desses dispositivos, além de me familiarizar com a necessidade de construir APIs Gateways (BFF) para atender esses dispositivos.",
 				techStack: [
 					"iOS",
 					"Android",
@@ -137,41 +137,60 @@ export default {
 	},
 	experience: [
 		{
-			title: "VIA S.A",
-			duration: "Dezembro 2022 - Presente",
-			subtitle: "Software Engineer III",
+			title: "Grupo Casas Bahia",
+			duration: "Dezembro 2024 - Presente",
+			subtitle: "Software Engineer Specialist",
 			details: [
-				"Como desenvolvedor tive a oportunidade de construir sistemas escaláveis para o setor varejista, trabalhando com equipes na análise, implementação e manutenção de aplicativos para Android e iOS, garantindo alta performance e escalabilidade. Utilizo ferramentas de teste de regressão, como Newman, para garantir a qualidade do software antes de sua implementação em produção.",
-				"Neste projeto, utilizamos as seguintes tecnologias: Visual Studio Code, Git, ASP.NET Core (WEB API, Minimal APIs, Console, Packages), NET (6, 7), AKS, Auto Mapper, Git, JWT, MOQ, NLog, Polly, Prometheus, Redis, Refit, Swagger, WireMock .NET e xUnit .NET",
-				"Neste projeto utilizamos as ferramentas Visual Studio Code, Git, ASP.NET Core (WEB API) e NET Core (3.0, 5.0) para desenvolver soluções escaláveis e performáticas. Utilizo AKS para o deploy e gerenciamento de clusters de Kubernetes, e bibliotecas como Auto Mapper, C# 9.0 e 10, JWT, MOQ, NLog, Polly, Prometheus, Redis, Refit, Swagger, WireMock .NET e xUnit .NET para garantir a qualidade e testabilidade do meu código."
+				"Promovido a Especialista devido à liderança técnica exercida no time de aplicativos Mobile. Atualmente lidero o time de Onboarding (Identidade e Cadastro), sendo responsável pela formação da equipe, contratações, condução de 1:1s e definição da cultura técnica.",
+				"Responsável pela arquitetura e interface com a área de negócios, balanceando demandas de Capex e Opex e definindo planejamentos estratégicos de curto a longo prazo. Lidero frentes críticas como a unificação de cadastros (Online/Lojas Físicas), agendamento de entregas e evolução da segurança com MFA e migração de autenticação (Cookies para JWT).",
+				"Iniciei a implementação de um servidor IDP (Identity Provider) e atuo em colaboração direta com os times de Cyber Segurança e Antifraude para garantir uma jornada de cliente segura e unificada."
 			],
 			tags: [
-				"Visual C#",
-				"NET 6",
-				"Docker",
-				"Kubernetes",
-				"Microserviços",
-				"Github Actions",
+				"Liderança Técnica",
+				"NET 10",
+				"Arquitetura",
+				"Gestão de Pessoas",
+				"IDP / JWT",
+				"Cyber Security"
+			],
+			icon: "briefcase",
+		},
+		{
+			title: "Grupo Casas Bahia",
+			duration: "Dezembro 2022 - Dezembro 2024",
+			subtitle: "Senior Software Engineer",
+			details: [
+				"Internalizado como Sênior após excelente desempenho na consultoria. Atuei no backend (.NET Core) do time de aplicativos Mobile, focando na Home e PDP (Página de Produto). Lideré migrações sequenciais do .NET (v3 até v9) e introduzi a cultura de testes automatizados de API com Postman Newman na esteira DevOps, elevando a qualidade das entregas.",
+				"Projetei e implementei uma nova arquitetura desacoplada para Catálogo e Preço, permitindo estratégias de cache híbridas (Redis para dados voláteis, MongoDB para estruturados) e unificando a precificação entre canais. Isso resultou em ganhos massivos de performance e permitiu diferenciação de preços por canal.",
+				"Participei ativamente de 5 Black Fridays (evento de tráfego massivo), utilizando Dynatrace, ELK e Grafana para observabilidade, e implementando padrões de resiliência como Circuit Breaker (Polly) em ambiente Kubernetes (AKS). Provei a eficácia do MongoDB como alternativa de cache para APIs de Imagens de alta demanda."
+			],
+			tags: [
+				"NET 9",
+				"AKS / Kubernetes",
+				"Microsserviços",
+				"Postman Newman",
+				"Dynatrace / ELK",
+				"Redis / MongoDB"
 			],
 			icon: "shopping-bag",
 		},
 		{
-			title: "Stefanini Consultoria e Assessoria S.A",
+			title: "Stefanini (Alocado na Via Varejo)",
 			duration: "Agosto 2021 - Dezembro 2022",
-			subtitle: "Software Engineer",
+			subtitle: "Senior Software Engineer",
 			details: [
-				"Como desenvolvedor em trabalhei com serviços distribuídos para o setor varejista, desenvolvendo APIs Gateway para atender aplicativos Mobile. Meus projetos incluem a manutenção contínua dos serviços, garantindo alta disponibilidade e escalabilidade. Utilizo ferramentas de documentação, como OpenAPI (Swagger) e Postman, para garantir a clareza e facilidade de uso das APIs.",
-				"Neste projeto utilizamos as ferramentas Visual Studio Code, Git, ASP.NET Core (WEB API) e NET Core (3.0, 5.0) para desenvolver soluções escaláveis e performáticas. Utilizo AKS para o deploy e gerenciamento de clusters de Kubernetes, e bibliotecas como Auto Mapper, C# 8.0 e 9, JWT, MOQ, NLog, Polly, Prometheus, Redis, Refit, Swagger, WireMock .NET e xUnit .NET para garantir a qualidade e testabilidade do meu código.",
+				"Iniciei minha jornada no varejo atuando como consultor na Via Varejo (atual Grupo Casas Bahia). Trabalhei no desenvolvimento e manutenção de serviços distribuídos e APIs Gateway (BFF) para atender aos aplicativos Mobile, garantindo alta disponibilidade e escalabilidade.",
+				"Utilizei tecnologias como ASP.NET Core, Docker e Kubernetes para modernizar o legado e facilitar a evolução dos produtos digitais da companhia."
 			],
 			tags: [
 				"Visual C#",
 				"NET 5",
 				"Docker",
 				"Kubernetes",
-				"Microserviços",
-				"Jenkins",
+				"BFF",
+				"Swagger"
 			],
-			icon: "shopping-bag",
+			icon: "id-card",
 		},
 		{
 			title: "MOUT'S",
