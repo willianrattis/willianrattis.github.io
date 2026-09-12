@@ -114,9 +114,8 @@ a:hover {
     flex-direction: column;
 }
 
-.neon-text {
-    color: var(--primary-neon);
-    text-shadow: 0 0 5px rgba(102, 252, 241, 0.5);
+.mono-font {
+    font-family: var(--font-mono);
 }
 
 /* Hero Section */
@@ -386,13 +385,13 @@ a:hover {
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
 }
 
 @media (min-width: 992px) {
     .skills-grid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -414,18 +413,6 @@ a:hover {
     display: block;
     font-weight: 600;
     margin-bottom: 0.5rem;
-}
-
-.skill-bar {
-    height: 4px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background: var(--gradient-bar, var(--secondary-neon));
 }
 
 /* Projects Grid */

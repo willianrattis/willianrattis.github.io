@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Willian Rattis | Software Engineer</title>
-   <meta name="description" content="Portfolio de Engenharia de Software focada em Modernidade e IA.">
-   <meta name="keywords" content="software engineer, .net, c#, angular, react, ai, portfolio">
+   <title>Willian Rattis | Tech Lead & Software Engineer</title>
+   <meta name="description" content="Willian Rattis — Tech Lead e engenheiro de software com 13 anos de experiência em microsserviços .NET, Kubernetes e IA generativa. Disponível para trabalho remoto.">
+   <meta name="keywords" content="tech lead, engenheiro de software, arquitetura de soluções, software engineer, .NET, C#, Python, microsserviços, microservices, Kubernetes, Kafka, Azure, IA generativa, generative AI">
+   <link rel="canonical" href="https://willianrattis.com">
+
+   <!-- Open Graph -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://willianrattis.com">
+   <meta property="og:title" content="Willian Rattis | Tech Lead & Software Engineer">
+   <meta property="og:description" content="Willian Rattis — Tech Lead e engenheiro de software com 13 anos de experiência em microsserviços .NET, Kubernetes e IA generativa. Disponível para trabalho remoto.">
+   <meta property="og:locale" content="pt_BR">
+   <meta property="og:image" content="https://willianrattis.com/images/me-memoji.png">
+
+   <!-- Twitter Card -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Willian Rattis | Tech Lead & Software Engineer">
+   <meta name="twitter:description" content="Willian Rattis — Tech Lead e engenheiro de software com 13 anos de experiência em microsserviços .NET, Kubernetes e IA generativa. Disponível para trabalho remoto.">
+   <meta name="twitter:image" content="https://willianrattis.com/images/me-memoji.png">
+
+   <!-- Structured Data -->
+   <script type="application/ld+json">
+   {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Willian Santa Rosa Rattis",
+      "alternateName": "Willian Rattis",
+      "jobTitle": "Tech Lead & Software Engineer",
+      "url": "https://willianrattis.com",
+      "email": "willian.rattis@gmail.com",
+      "sameAs": [
+         "https://linkedin.com/in/willianrattis",
+         "https://github.com/willianrattis"
+      ],
+      "address": {
+         "@type": "PostalAddress",
+         "addressLocality": "Presidente Venceslau",
+         "addressRegion": "São Paulo",
+         "addressCountry": "BR"
+      },
+      "alumniOf": {
+         "@type": "CollegeOrUniversity",
+         "name": "FATEC-SP, Faculdade de Tecnologia de São Paulo"
+      },
+      "knowsAbout": [
+         "C#",
+         ".NET",
+         "Python",
+         "Microservices",
+         "Software Architecture",
+         "Kubernetes",
+         "Apache Kafka",
+         "Azure",
+         "Generative AI"
+      ]
+   }
+   </script>
 
    <!-- Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +92,7 @@
             <li><a href="#hero" data-i18n="nav.start">Start</a></li>
             <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
             <li><a href="#skills" data-i18n="nav.skills">Stack</a></li>
-            <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Destaques</a></li>
             <li><a href="#experience" data-i18n="nav.experience">XP</a></li>
             <li><a href="#contact" data-i18n="nav.contact">Conectar</a></li>
             <li><button id="lang-toggle" class="btn-lang" aria-label="Switch Language">🇺🇸 EN</button></li>
@@ -59,12 +112,13 @@
                <img src="images/me-memoji.png" alt="Willian Rattis" class="profile-img floating">
             </div>
             <h1 class="glitch-text">Willian Rattis</h1>
-            <h2 class="subtitle mono-font" data-i18n="hero.role">Senior Software Engineer</h2>
+            <h2 class="subtitle mono-font" data-i18n="hero.role">Tech Lead · Engenheiro de Software Sênior · Arquitetura de Soluções</h2>
+            <p class="project-desc" data-i18n="hero.location">Presidente Venceslau, São Paulo, Brasil · Trabalho remoto</p>
             <div class="typewriter">
                <span id="typing-text"></span>
             </div>
             <div class="cta-buttons">
-               <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProject">Ver Projetos</a>
+               <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProject">Ver destaques</a>
                <a href="#contact" class="btn btn-outline" data-i18n="hero.ctaContact">Contato</a>
             </div>
          </div>
@@ -83,9 +137,16 @@
          </div>
          <div class="row glass-panel" data-aos="fade-up">
             <div class="about-text">
-               <!-- Content to be migrated -->
-               <p>Olá! Sou um engenheiro apaixonado por transformar problemas complexos em soluções elegantes e
-                  escaláveis.</p>
+               <p>Sou engenheiro de software há 13 anos. Comecei com sistemas web e ERP, passei por e-commerce e
+                  integrações, e nos últimos anos venho atuando em plataformas de varejo digital de grande porte,
+                  hoje como Tech Lead e em arquitetura de soluções no Grupo Casas Bahia.</p>
+               <p>Atuei na squad de vitrine do e-commerce e, a partir de dezembro de 2024, na liderança técnica da
+                  squad responsável pelas jornadas de autenticação e cadastro das marcas Casas Bahia, Extra e
+                  Pontofrio. Desde agosto de 2026 atuo no SalesAgent, agente de inteligência artificial generativa
+                  para vendas assistidas no canal WhatsApp.</p>
+               <p>O que mais valorizo no meu trabalho é a parte que não aparece no código: traduzir problema técnico
+                  para quem não é técnico, aproximar times que dependem uns dos outros e criar um ambiente em que as
+                  pessoas se sintam à vontade para crescer.</p>
             </div>
          </div>
       </div>
@@ -107,7 +168,7 @@
    <section id="projects" class="section-padding">
       <div class="container">
          <div class="section-header" data-aos="fade-right">
-            <h2><span class="hash">#</span> <span data-i18n="headers.projects">Projetos</span></h2>
+            <h2><span class="hash">#</span> <span data-i18n="headers.projects">Trabalhos em destaque</span></h2>
          </div>
          <div class="projects-grid" id="projects-container">
             <!-- Javascript will populate this -->
@@ -131,10 +192,10 @@
    <section id="contact" class="section-padding">
       <div class="container center-flex column">
          <h2 data-aos="fade-up" data-i18n="headers.contact">Vamos Construir o Futuro?</h2>
-         <p data-aos="fade-up" data-aos-delay="100" data-i18n="headers.contactDesc">Estou sempre aberto a novas
-            oportunidades e desafios.</p>
-         <a href="mailto:willianrattis@gmail.com" class="btn btn-primary big-btn" data-aos="zoom-in">
-            <i class="fas fa-paper-plane"></i> <span data-i18n="headers.emailBtn">Mande um Hello</span>
+         <p data-aos="fade-up" data-aos-delay="100" data-i18n="headers.contactDesc">Estou aberto a conversas sobre
+            arquitetura, plataformas de alto tráfego e inteligência artificial aplicada a produto.</p>
+         <a href="mailto:willian.rattis@gmail.com" class="btn btn-primary big-btn" data-aos="zoom-in">
+            <i class="fas fa-paper-plane"></i> <span data-i18n="headers.emailBtn">Enviar e-mail</span>
          </a>
 
          <div class="social-links" data-aos="fade-up" data-aos-delay="200">
@@ -146,14 +207,14 @@
 
    <footer>
       <div class="container text-center">
-         <p class="mono-font" data-i18n="footer.copyright">Designed & Built by Willian Rattis © 2025</p>
+         <p class="mono-font" data-i18n="footer.copyright">Designed & Built by Willian Rattis</p>
       </div>
    </footer>
 
    <!-- Scripts -->
    <!-- Three.js & Vanta for Background -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
 
    <!-- AOS Animation -->
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -1,14 +1,17 @@
 // Modern App Entry Point
 import db from '../db/db.js';
-import { getCurrentLang, setLanguage, updateStaticContent } from './i18n.js';
+import { getCurrentLang, setLanguage, updateStaticContent, getTranslation } from './i18n.js';
+
+let typedInstance = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     // console.log('Modern Portfolio Loaded. Initializing systems...', data);
 
-    initVisuals();
     updateStaticContent(); // Initial static text render
     populateContent();
     initInteractions();
+    initNavigation();
+    initVisuals();
     initAOS();
     updateLangButton(getCurrentLang());
 });
@@ -36,9 +39,24 @@ function initVisuals() {
     }
 
     // 2. Typed JS
-    // Extract user roles from bio or hardcode for effect
-    new Typed('#typing-text', {
-        strings: ['Cloud Architect', 'DevOps Enthusiast', '.NET Specialist', 'Full Stack Developer'],
+    initTypewriter();
+}
+
+function initTypewriter() {
+    const strings = getTranslation('hero.typewriter');
+
+    if (typeof Typed === 'undefined') {
+        console.warn("Typed.js failed to load; falling back to a static role line.");
+        const staticRole = document.getElementById('typing-text');
+        if (staticRole && Array.isArray(strings)) staticRole.textContent = strings[0];
+        return;
+    }
+
+    if (typedInstance) {
+        typedInstance.destroy();
+    }
+    typedInstance = new Typed('#typing-text', {
+        strings: strings,
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
@@ -71,55 +89,33 @@ function populateContent() {
     // --- Skills ---
     const skillsContainer = document.getElementById('skills-container');
     if (data.skills) {
-        data.skills.forEach(skill => {
+        data.skills.forEach(group => {
             const card = document.createElement('div');
             card.className = 'skill-card';
             card.setAttribute('data-aos', 'fade-up');
 
-            // Generate valid class or variable for color if needed, simplified here
             card.innerHTML = `
-                <span class="skill-name">${skill.skillName}</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: ${skill.percentage}%"></div>
-                </div>
+                <span class="skill-name">${group.category}</span>
+                <p class="project-desc" style="margin-bottom: 0;">${group.items.join(', ')}</p>
             `;
             skillsContainer.appendChild(card);
         });
     }
 
-    // --- Projects ---
+    // --- Featured Work ---
     const projectsContainer = document.getElementById('projects-container');
-    if (data.projects) {
-        // Flatten categories for modern grid
-        const allProjects = [
-            ...data.projects.web.map(p => ({ ...p, category: 'Web' })),
-            ...data.projects.software.map(p => ({ ...p, category: 'Software' })),
-            ...data.projects.app.map(p => ({ ...p, category: 'App' }))
-        ];
-
-        allProjects.forEach(project => {
-            // Skip empty projects (some in db.js seemed empty)
-            if (!project.summary) return;
-
+    if (data.featured) {
+        data.featured.forEach(item => {
             const card = document.createElement('div');
             card.className = 'project-card';
             card.setAttribute('data-tilt', ''); // Activation for Tilt.js
             card.setAttribute('data-aos', 'fade-up');
 
-            let techTags = '';
-            if (project.techStack) {
-                project.techStack.forEach(t => techTags += `<span class="tech-tag">#${t}</span>`);
-            }
-
-            // Fallback content if title missing
-            const title = project.projectName || project.category + " Project";
-
             card.innerHTML = `
                 <div class="project-content">
-                    <span class="project-category">${project.category}</span>
-                    <h3 class="project-title">${title}</h3>
-                    <p class="project-desc">${project.summary}</p>
-                    <div class="project-tech">${techTags}</div>
+                    <span class="project-category">${item.context}</span>
+                    <h3 class="project-title">${item.title}</h3>
+                    <p class="project-desc">${item.description}</p>
                 </div>
             `;
             projectsContainer.appendChild(card);
@@ -142,11 +138,12 @@ function populateContent() {
         // Icon logic (simplified)
         // item.icon is like 'shopping-bag', 'code'
 
-        let detailsHtml = '<ul>';
-        if (item.details) {
+        let detailsHtml = '';
+        if (item.details && item.details.length) {
+            detailsHtml = '<ul>';
             item.details.forEach(d => detailsHtml += `<li>${d}</li>`);
+            detailsHtml += '</ul>';
         }
-        detailsHtml += '</ul>';
 
         let tagsHtml = '';
         if (item.tags) {
@@ -160,7 +157,7 @@ function populateContent() {
             <span class="timeline-date">${item.duration || ''}</span>
             <div class="timeline-content">
                 <h3>${item.title}</h3>
-                <h4>${item.subtitle || ''}</h4>
+                <h4>${item.institution || item.subtitle || ''}</h4>
                 ${detailsHtml}
                 ${tagsHtml}
             </div>
@@ -210,7 +207,9 @@ function initInteractions() {
             const newLang = current === 'en-US' ? 'pt-BR' : 'en-US';
             setLanguage(newLang);
             updateLangButton(newLang);
+            updateMetaTags();
             populateContent();
+            initTypewriter();
 
             // Re-init Tilt for new elements
             initTilt();
@@ -241,7 +240,26 @@ function initTilt() {
     }
 }
 
+function updateMetaTags() {
+    const description = getTranslation('meta.description');
+    const ogLocale = getTranslation('meta.ogLocale');
+
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) descriptionTag.setAttribute('content', description);
+
+    const ogDescriptionTag = document.querySelector('meta[property="og:description"]');
+    if (ogDescriptionTag) ogDescriptionTag.setAttribute('content', description);
+
+    const twitterDescriptionTag = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDescriptionTag) twitterDescriptionTag.setAttribute('content', description);
+
+    const ogLocaleTag = document.querySelector('meta[property="og:locale"]');
+    if (ogLocaleTag) ogLocaleTag.setAttribute('content', ogLocale);
+}
+
 function updateLangButton(lang) {
+    document.documentElement.lang = lang;
+
     const btn = document.getElementById('lang-toggle');
     if (btn) {
         if (lang === 'en-US') {

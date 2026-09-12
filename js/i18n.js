@@ -1,56 +1,68 @@
 const translations = {
     'pt-BR': {
+        meta: {
+            description: "Willian Rattis — Tech Lead e engenheiro de software com 13 anos de experiência em microsserviços .NET, Kubernetes e IA generativa. Disponível para trabalho remoto.",
+            ogLocale: "pt_BR"
+        },
         nav: {
             start: "Start",
             about: "Sobre",
             skills: "Stack",
-            projects: "Projetos",
+            projects: "Destaques",
             experience: "XP",
             contact: "Conectar"
         },
         hero: {
-            role: "Senior Software Engineer",
-            ctaProject: "Ver Projetos",
+            role: "Tech Lead · Engenheiro de Software Sênior · Arquitetura de Soluções",
+            location: "Presidente Venceslau, São Paulo, Brasil · Trabalho remoto",
+            typewriter: ["Tech Lead", "Arquitetura de Soluções", "Microsserviços em .NET", "IA Generativa"],
+            ctaProject: "Ver destaques",
             ctaContact: "Contato"
         },
         headers: {
             about: "Sobre Mim",
             skills: "Tech Stack",
-            projects: "Projetos",
+            projects: "Trabalhos em destaque",
             experience: "Jornada",
             contact: "Vamos Construir o Futuro?",
-            contactDesc: "Estou sempre aberto a novas oportunidades e desafios.",
-            emailBtn: "Mande um Hello"
+            contactDesc: "Estou aberto a conversas sobre arquitetura, plataformas de alto tráfego e inteligência artificial aplicada a produto.",
+            emailBtn: "Enviar e-mail"
         },
         footer: {
-            copyright: "Designed & Built by Willian Rattis © 2025"
+            copyright: "Designed & Built by Willian Rattis © {year}"
         }
     },
     'en-US': {
+        meta: {
+            description: "Willian Rattis — Tech Lead and software engineer with 13 years of experience in .NET microservices, Kubernetes and generative AI. Available for remote work.",
+            ogLocale: "en_US"
+        },
         nav: {
             start: "Start",
             about: "About",
             skills: "Stack",
-            projects: "Projects",
+            projects: "Featured",
             experience: "XP",
             contact: "Connect"
         },
         hero: {
-            role: "Senior Software Engineer",
-            ctaProject: "View Projects",
+            role: "Tech Lead · Senior Software Engineer · Solutions Architecture",
+            location: "Presidente Venceslau, São Paulo, Brazil · Remote",
+            typewriter: ["Tech Lead", "Solutions Architecture", ".NET Microservices", "Generative AI"],
+            ctaProject: "View featured work",
             ctaContact: "Contact"
         },
         headers: {
             about: "About Me",
             skills: "Tech Stack",
-            projects: "Projects",
+            projects: "Featured work",
             experience: "Journey",
-            contact: "Let's Build the Future?",
-            contactDesc: "I am always open to new opportunities and challenges.",
-            emailBtn: "Say Hello"
+            contact: "Let's Build the Future",
+            contactDesc: "I am open to conversations about architecture, high-traffic platforms and artificial intelligence applied to product.",
+            emailBtn: "Send an email"
         },
         footer: {
-            copyright: "Designed & Built by Willian Rattis © 2025"
+            copyright: "Designed & Built by Willian Rattis © {year}"
         }
     }
 };
@@ -84,6 +96,9 @@ export function getTranslation(key) {
         } else {
             return key;
         }
+    }
+    if (typeof result === 'string') {
+        result = result.replace('{year}', new Date().getFullYear());
     }
     return result;
 }
