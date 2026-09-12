@@ -10,64 +10,36 @@ const pt = {
 	},
 	skills: [
 		{
-			title: "Linguagens",
-			skillName: "Visual C#",
-			color: "1",
-			percentage: "88",
+			category: "Linguagens e frameworks",
+			items: ["C#", ".NET 8/9/10", "ASP.NET Core", "Python", "SQL", "JavaScript"],
 		},
 		{
-			title: "Frameworks/Bibliotecas",
-			skillName: "Angular, Reactjs",
-			color: "2",
-			percentage: "22",
+			category: "Arquitetura",
+			items: ["Microsserviços", "Arquitetura orientada a eventos", "Clean Architecture", "DDD", "CQRS", "SOLID", "API Gateway (Kong)", "BFF", "mTLS", "Design patterns"],
 		},
 		{
-			title: "Backend",
-			skillName: "Nodejs, MongoDB",
-			color: "3",
-			percentage: "25",
+			category: "IA generativa",
+			items: ["Pydantic AI", "Azure OpenAI", "Orquestração de agentes", "Prompt chaining", "RAG", "pgvector"],
 		},
 		{
-			title: "Nuvem",
-			skillName: "Azure",
-			color: "4",
-			percentage: "30",
+			category: "Cloud e infraestrutura",
+			items: ["Azure", "AKS", "Kubernetes", "Docker", "Helm", "GitHub Actions", "Spinnaker", "XLRelease", "CDN"],
 		},
 		{
-			title: "Design",
-			skillName: "HTML, Bootstrap, CSS",
-			color: "5",
-			percentage: "40",
+			category: "Dados e mensageria",
+			items: ["Apache Kafka", "SQL Server", "PostgreSQL", "MongoDB", "Redis", "Dapper", "Entity Framework Core"],
 		},
 		{
-			title: "Controle de Versão",
-			skillName: "Git, GitHub",
-			color: "6",
-			percentage: "70",
+			category: "Segurança",
+			items: ["Autenticação e autorização", "MFA", "JWT", "Gestão de segredos", "Integração com antifraude"],
 		},
 		{
-			title: "Ferramentas",
-			skillName: "Postman",
-			color: "7",
-			percentage: "82",
+			category: "Qualidade e observabilidade",
+			items: ["Testes de regressão e de contrato", "TDD", "xUnit", "Moq", "WireMock", "Postman/Newman", "SonarQube", "Teste de carga", "Dynatrace", "Grafana", "Elasticsearch", "Kibana"],
 		},
 		{
-			title: "Produtos SaaS",
-			skillName: "JIRA, Trello",
-			color: "8",
-			percentage: "50",
-		},
-		{
-			title: "Editor",
-			skillName: "VS Code, Rider",
-			color: "9",
-			percentage: "77",
-		},
-		{
-			title: "Depuração Proxy",
-			skillName: "Proxyman, Fiddler",
-			color: "10",
-			percentage: "60",
+			category: "Liderança",
+			items: ["Seleção técnica", "Desenvolvimento de pessoas", "Roadmap trimestral", "Alinhamento entre squads e stakeholders", "Metodologias ágeis"],
 		},
 	],
 	featured: [
@@ -279,36 +251,9 @@ const pt = {
 	],
 	education: [
 		{
-			title: "Bacharél em Análise e Desenvolvimento de Sistemas",
-			duration: "",
-			subtitle: "Faculdade de Tecnologia do Estado de SP, FATEC",
-			details: [
-				"Sou bacharel em Análise e Desenvolvimento de Sistemas pela Faculdade de Tecnologia do Estado de São Paulo, uma instituição pública de ensino de  renome. Durante minha graduação, tive a oportunidade de estudar uma ampla gama de disciplinas, incluindo Programação, Algoritmos, Laboratório de Hardware, Matemática Discreta, Engenharia de Software, Linguagem de Programação, Sistemas de Informação, Cálculo, Estrutura de Dados, Estatística Aplicada, Banco de Dados, Segurança da Informação, Redes de Computadores, Sistemas Operacionais e Gestão de Equipes.",
-				"Minha formação em Análise e Desenvolvimento de Sistemas não somente me permitiu adquirir habilidades valiosas para atuar como desenvolvedor de software, mas também ampliou  minha visão e compreensão sobre as complexidades e possibilidades do desenvolvimento de software."
-			],
-			tags: [
-				"Sistemas Operacionais",
-				"Engenharia de Software",
-				"Bancos de Dados",
-				"Testes de Software",
-				"Estrutura de Dados &amp; Algoritímos"
-			],
-			icon: "graduation-cap",
-		},
-		{
-			title: "Ensino Médio",
-			duration: "",
-			subtitle: "Colégio Campos Sales",
-			details: [
-				"Tive a oportunidade de estudar no ensino médio no Colégio Campos Salles, localizado no bairro da Lapa em São Paulo. Uma instituição de ensino tradicional, que me forneceu uma base sólida para continuar meus estudos e desenvolver minhas habilidades."
-			],
-			tags: [
-				"Português",
-				"Matemática",
-				"História",
-				"Geografia"
-			],
-			icon: "book",
+			title: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+			institution: "FATEC-SP · Faculdade de Tecnologia de São Paulo",
+			duration: "2015 - 2018",
 		},
 	],
 };
@@ -325,64 +270,36 @@ const en = {
 	},
 	skills: [
 		{
-			title: "Languages",
-			skillName: "Visual C#",
-			color: "1",
-			percentage: "88",
+			category: "Languages and frameworks",
+			items: ["C#", ".NET 8/9/10", "ASP.NET Core", "Python", "SQL", "JavaScript"],
 		},
 		{
-			title: "Frameworks/Libraries",
-			skillName: "Angular, Reactjs",
-			color: "2",
-			percentage: "22",
+			category: "Architecture",
+			items: ["Microservices", "Event-driven architecture", "Clean Architecture", "DDD", "CQRS", "SOLID", "API Gateway (Kong)", "BFF", "mTLS", "Design patterns"],
 		},
 		{
-			title: "Backend",
-			skillName: "Nodejs, MongoDB",
-			color: "3",
-			percentage: "25",
+			category: "Generative AI",
+			items: ["Pydantic AI", "Azure OpenAI", "Agent orchestration", "Prompt chaining", "RAG", "pgvector"],
 		},
 		{
-			title: "Clouds",
-			skillName: "Azure",
-			color: "4",
-			percentage: "30",
+			category: "Cloud and infrastructure",
+			items: ["Azure", "AKS", "Kubernetes", "Docker", "Helm", "GitHub Actions", "Spinnaker", "XLRelease", "CDN"],
 		},
 		{
-			title: "Design",
-			skillName: "HTML, Bootstrap, CSS",
-			color: "5",
-			percentage: "40",
+			category: "Data and messaging",
+			items: ["Apache Kafka", "SQL Server", "PostgreSQL", "MongoDB", "Redis", "Dapper", "Entity Framework Core"],
 		},
 		{
-			title: "Version Control",
-			skillName: "Git, GitHub",
-			color: "6",
-			percentage: "70",
+			category: "Security",
+			items: ["Authentication and authorization", "MFA", "JWT", "Secret management", "Fraud-prevention integration"],
 		},
 		{
-			title: "Tools",
-			skillName: "Postman",
-			color: "7",
-			percentage: "82",
+			category: "Quality and observability",
+			items: ["Regression and contract testing", "TDD", "xUnit", "Moq", "WireMock", "Postman/Newman", "SonarQube", "Load testing", "Dynatrace", "Grafana", "Elasticsearch", "Kibana"],
 		},
 		{
-			title: "Saas products",
-			skillName: "JIRA, Trello",
-			color: "8",
-			percentage: "50",
-		},
-		{
-			title: "Editor",
-			skillName: "VS Code, Rider",
-			color: "9",
-			percentage: "77",
-		},
-		{
-			title: "Proxy Debugging",
-			skillName: "Proxyman, Fiddler",
-			color: "10",
-			percentage: "60",
+			category: "Leadership",
+			items: ["Technical hiring", "People development", "Quarterly roadmap", "Cross-squad and stakeholder alignment", "Agile methodologies"],
 		},
 	],
 	featured: [
@@ -594,36 +511,9 @@ const en = {
 	],
 	education: [
 		{
-			title: "Bachelor's in Systems Analysis and Development",
-			duration: "",
-			subtitle: "São Paulo State Faculty of Technology, FATEC",
-			details: [
-				"I have a Bachelor's degree in Systems Analysis and Development from the São Paulo State Faculty of Technology, a renowned public educational institution. During my graduation, I had the opportunity to study a wide range of subjects, including Programming, Algorithms, Hardware Laboratory, Discrete Mathematics, Software Engineering, Programming Language, Information Systems, Calculus, Data Structure, Applied Statistics, Database, Information Security, Computer Networks, Operating Systems and Team Management.",
-				"My background in Systems Analysis and Development not only allowed me to acquire valuable skills to act as a software developer, but also broadened my vision and understanding of the complexities and possibilities of software development."
-			],
-			tags: [
-				"Operating Systems",
-				"Software Engineering",
-				"Databases",
-				"Software Testing",
-				"Data Structure &amp; Algorithms"
-			],
-			icon: "graduation-cap",
-		},
-		{
-			title: "High School",
-			duration: "",
-			subtitle: "Colégio Campos Sales",
-			details: [
-				"I had the opportunity to study high school at Colégio Campos Salles, located in the Lapa neighborhood in São Paulo. A traditional educational institution, which provided me with a solid foundation to continue my studies and develop my skills."
-			],
-			tags: [
-				"Portuguese",
-				"Mathematics",
-				"History",
-				"Geography"
-			],
-			icon: "book",
+			title: "Associate Degree in Systems Analysis and Development",
+			institution: "FATEC-SP · São Paulo College of Technology",
+			duration: "2015 - 2018",
 		},
 	],
 };

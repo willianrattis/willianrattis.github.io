@@ -71,17 +71,14 @@ function populateContent() {
     // --- Skills ---
     const skillsContainer = document.getElementById('skills-container');
     if (data.skills) {
-        data.skills.forEach(skill => {
+        data.skills.forEach(group => {
             const card = document.createElement('div');
             card.className = 'skill-card';
             card.setAttribute('data-aos', 'fade-up');
 
-            // Generate valid class or variable for color if needed, simplified here
             card.innerHTML = `
-                <span class="skill-name">${skill.skillName}</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: ${skill.percentage}%"></div>
-                </div>
+                <span class="skill-name">${group.category}</span>
+                <p class="project-desc" style="margin-bottom: 0;">${group.items.join(', ')}</p>
             `;
             skillsContainer.appendChild(card);
         });
@@ -123,11 +120,12 @@ function populateContent() {
         // Icon logic (simplified)
         // item.icon is like 'shopping-bag', 'code'
 
-        let detailsHtml = '<ul>';
-        if (item.details) {
+        let detailsHtml = '';
+        if (item.details && item.details.length) {
+            detailsHtml = '<ul>';
             item.details.forEach(d => detailsHtml += `<li>${d}</li>`);
+            detailsHtml += '</ul>';
         }
-        detailsHtml += '</ul>';
 
         let tagsHtml = '';
         if (item.tags) {
@@ -141,7 +139,7 @@ function populateContent() {
             <span class="timeline-date">${item.duration || ''}</span>
             <div class="timeline-content">
                 <h3>${item.title}</h3>
-                <h4>${item.subtitle || ''}</h4>
+                <h4>${item.institution || item.subtitle || ''}</h4>
                 ${detailsHtml}
                 ${tagsHtml}
             </div>

@@ -416,18 +416,6 @@ a:hover {
     margin-bottom: 0.5rem;
 }
 
-.skill-bar {
-    height: 4px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background: var(--gradient-bar, var(--secondary-neon));
-}
-
 /* Projects Grid */
 .projects-grid {
     display: grid;
