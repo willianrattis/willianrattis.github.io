@@ -7,11 +7,11 @@ let typedInstance = null;
 document.addEventListener('DOMContentLoaded', () => {
     // console.log('Modern Portfolio Loaded. Initializing systems...', data);
 
-    initVisuals();
     updateStaticContent(); // Initial static text render
     populateContent();
     initInteractions();
     initNavigation();
+    initVisuals();
     initAOS();
     updateLangButton(getCurrentLang());
 });

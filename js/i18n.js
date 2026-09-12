@@ -24,7 +24,7 @@ const translations = {
             skills: "Tech Stack",
             projects: "Trabalhos em destaque",
             experience: "Jornada",
-            contact: "Vamos conversar",
+            contact: "Vamos Construir o Futuro?",
             contactDesc: "Estou aberto a conversas sobre arquitetura, plataformas de alto tráfego e inteligência artificial aplicada a produto.",
             emailBtn: "Enviar e-mail"
         },
@@ -57,7 +57,7 @@ const translations = {
             skills: "Tech Stack",
             projects: "Featured work",
             experience: "Journey",
-            contact: "Get in touch",
+            contact: "Let's Build the Future",
             contactDesc: "I am open to conversations about architecture, high-traffic platforms and artificial intelligence applied to product.",
             emailBtn: "Send an email"
         },
