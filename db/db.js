@@ -248,7 +248,7 @@ const pt = {
 		},
 		{
 			title: "Kemek Soluções",
-			duration: "Janeiro 2014 - Outubro 2017",
+			duration: "Janeiro 2014 - Outubro 2015",
 			subtitle: "Desenvolvedor Júnior",
 			details: [
 				"Como desenvolvedor de software, nesta época trabalhei com desenvolvimento de sistemas web utilizando C# e ASP.NET MVC com Razor para o front-end. Isso me permitiu criar soluções eficientes e intuitivas para usuários, com uma interface amigável e fácil de usar. Além disso, a experiência adquirida na construção de aplicações web me permitiu me desenvolver como profissional e aprender mais sobre arquitetura MVC."
@@ -330,49 +330,6 @@ const pt = {
 			icon: "book",
 		},
 	],
-	footer: [
-		{
-			label: "Dev Profiles",
-			data: [
-				{
-					text: "GitHub",
-					link: "https://github.com/willianrattis",
-				},
-				{
-					text: "LeetCode",
-					link: "https://leetcode.com//",
-				},
-			],
-		},
-		{
-			label: "Recursos",
-			data: [
-				{
-					text: "Habilitar Dark/Light Mode",
-					func: "enableDarkMode()",
-				},
-				{
-					text: "Imprima está página",
-					func: "window.print()",
-				}
-			],
-		},
-		{
-			label: "Social Profiles",
-			data: [
-				{
-					text: "LinkedIn",
-					link: "https://www.linkedin.com/in/willianrattis/",
-				}
-			],
-		},
-		{
-			label: "copyright-text",
-			data: [
-				"Feito com &hearts; ."
-			],
-		},
-	]
 };
 
 const en = {
@@ -625,7 +582,7 @@ const en = {
 		},
 		{
 			title: "Kemek Soluções",
-			duration: "January 2014 - October 2017",
+			duration: "January 2014 - October 2015",
 			subtitle: "Junior Developer",
 			details: [
 				"As a software developer, at this time I worked on web system development using C# and ASP.NET MVC with Razor for the front-end. This allowed me to create efficient and intuitive solutions for users, with a friendly and easy-to-use interface. Additionally, the experience gained in building web applications allowed me to develop as a professional and learn more about MVC architecture."
@@ -707,49 +664,6 @@ const en = {
 			icon: "book",
 		},
 	],
-	footer: [
-		{
-			label: "Dev Profiles",
-			data: [
-				{
-					text: "GitHub",
-					link: "https://github.com/willianrattis",
-				},
-				{
-					text: "LeetCode",
-					link: "https://leetcode.com//",
-				},
-			],
-		},
-		{
-			label: "Resources",
-			data: [
-				{
-					text: "Enable Dark/Light Mode",
-					func: "enableDarkMode()",
-				},
-				{
-					text: "Print this page",
-					func: "window.print()",
-				}
-			],
-		},
-		{
-			label: "Social Profiles",
-			data: [
-				{
-					text: "LinkedIn",
-					link: "https://www.linkedin.com/in/willianrattis/",
-				}
-			],
-		},
-		{
-			label: "copyright-text",
-			data: [
-				"Made with &hearts; ."
-			],
-		},
-	]
 };
 
 export default { pt, en };

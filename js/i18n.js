@@ -23,7 +23,7 @@ const translations = {
             emailBtn: "Mande um Hello"
         },
         footer: {
-            copyright: "Designed & Built by Willian Rattis © 2025"
+            copyright: "Designed & Built by Willian Rattis © {year}"
         }
     },
     'en-US': {
@@ -50,7 +50,7 @@ const translations = {
             emailBtn: "Say Hello"
         },
         footer: {
-            copyright: "Designed & Built by Willian Rattis © 2025"
+            copyright: "Designed & Built by Willian Rattis © {year}"
         }
     }
 };
@@ -84,6 +84,9 @@ export function getTranslation(key) {
         } else {
             return key;
         }
+    }
+    if (typeof result === 'string') {
+        result = result.replace('{year}', new Date().getFullYear());
     }
     return result;
 }

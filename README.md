@@ -16,7 +16,7 @@ Este é meu portfólio pessoal, nele você vai encontrar alguns projetos que des
 ## Contato
 - Github: https://github.com/willianrattis
 - LinkedIn: https://www.linkedin.com/in/willianrattis/
-- E-Mail: Willian.rattis@gmail.com
+- E-Mail: willian.rattis@gmail.com
 
 ## Créditos
 - Aos repositórios públicos do Github que me deram muita inspiração e força para continuar mesmo não sendo muito criativo com front-end.

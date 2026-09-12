@@ -242,6 +242,8 @@ function initTilt() {
 }
 
 function updateLangButton(lang) {
+    document.documentElement.lang = lang;
+
     const btn = document.getElementById('lang-toggle');
     if (btn) {
         if (lang === 'en-US') {
