@@ -197,6 +197,7 @@ function initInteractions() {
             const newLang = current === 'en-US' ? 'pt-BR' : 'en-US';
             setLanguage(newLang);
             updateLangButton(newLang);
+            updateMetaTags();
             populateContent();
             initTypewriter();
 
@@ -227,6 +228,20 @@ function initTilt() {
             "max-glare": 0.1,
         });
     }
+}
+
+function updateMetaTags() {
+    const description = getTranslation('meta.description');
+    const ogLocale = getTranslation('meta.ogLocale');
+
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) descriptionTag.setAttribute('content', description);
+
+    const ogDescriptionTag = document.querySelector('meta[property="og:description"]');
+    if (ogDescriptionTag) ogDescriptionTag.setAttribute('content', description);
+
+    const ogLocaleTag = document.querySelector('meta[property="og:locale"]');
+    if (ogLocaleTag) ogLocaleTag.setAttribute('content', ogLocale);
 }
 
 function updateLangButton(lang) {

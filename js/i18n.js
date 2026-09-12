@@ -1,5 +1,9 @@
 const translations = {
     'pt-BR': {
+        meta: {
+            description: "Willian Rattis — Tech Lead e engenheiro de software com 13 anos de experiência em microsserviços .NET, Kubernetes e IA generativa. Disponível para trabalho remoto.",
+            ogLocale: "pt_BR"
+        },
         nav: {
             start: "Start",
             about: "Sobre",
@@ -29,6 +33,10 @@ const translations = {
         }
     },
     'en-US': {
+        meta: {
+            description: "Willian Rattis — Tech Lead and software engineer with 13 years of experience in .NET microservices, Kubernetes and generative AI. Available for remote work.",
+            ogLocale: "en_US"
+        },
         nav: {
             start: "Start",
             about: "About",
