@@ -26,8 +26,11 @@ causes real professional harm.
 - Never describe internal organizational matters. No friction between teams, no
   consultancy arrivals or departures, no reorganizations, no individual colleagues, no
   legal or compliance situations, no security findings or pentest results.
-- The only numeric claim allowed anywhere on the site is the 86% security technical
-  debt reduction. Introduce no other number.
+- No business or operational metric may appear: no traffic or throughput figures, no
+  request-per-minute targets, no latency numbers, no revenue or loss figures, no
+  headcount or hiring counts, no budget constraints. The single exception is the 86%
+  security technical debt reduction. Dates, technology version numbers and years of
+  experience are not metrics and are expected to appear.
 
 If a statement seems like it would be stronger with more specifics, stop and ask.
 Never decide independently that a detail is safe to publish.

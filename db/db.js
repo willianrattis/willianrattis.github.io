@@ -94,8 +94,15 @@ const pt = {
 			details: [
 				"Desenvolvimento backend sênior e arquitetura de soluções no SalesAgent, agente de inteligência artificial generativa para vendas assistidas no canal WhatsApp."
 			],
-			tags: [],
-			icon: "robot",
+			tags: [
+				"Python",
+				"Pydantic AI",
+				"Azure OpenAI",
+				"PostgreSQL",
+				"Kafka",
+				"AKS/Kubernetes",
+				"Kong",
+			],
 		},
 		{
 			title: "Casas Bahia Tecnologia",
@@ -106,11 +113,10 @@ const pt = {
 			],
 			tags: [
 				"Liderança Técnica",
-				"NET 10",
+				".NET 10",
 				"Arquitetura",
 				"Gestão de Pessoas",
 			],
-			icon: "briefcase",
 		},
 		{
 			title: "Casas Bahia Tecnologia",
@@ -120,131 +126,114 @@ const pt = {
 				"Squad responsável pela home e pela página de produto, integrando catálogo, preço, recomendação e advertising nos aplicativos iOS e Android. Início em agosto de 2021 alocado pela Stefanini Brasil, com internalização pela Casas Bahia Tecnologia em dezembro de 2022."
 			],
 			tags: [
-				"NET 9",
+				".NET 9",
 				"AKS / Kubernetes",
 				"Microsserviços",
 				"Postman Newman",
 				"Dynatrace / ELK",
 				"Redis / MongoDB"
 			],
-			icon: "shopping-bag",
 		},
 		{
-			title: "MOUT'S",
+			title: "Mouts TI",
 			duration: "Janeiro 2020 - Junho 2021",
-			subtitle: "Desenvolvedor Sênior",
+			subtitle: "Engenheiro de Software Sênior",
 			details: [
 				"Migração dos sistemas de gestão de insumos da AMBEV de PHP 7 para ASP.NET Core, com ganhos de desempenho, segurança e manutenibilidade. Condução da atualização de .NET Core 2.2 para 3.0 em toda a base de código.",
 			],
 			tags: [
-				"Visual C#",
-				"NET 2.2",
-				"NET 3.0",
+				"C#",
+				".NET Core 2.2",
+				".NET Core 3.0",
 				"PHP",
 				"Docker",
 				"Apache",
 			],
-			icon: "beer",
 		},
 		{
-			title: "CESTECH",
+			title: "CESTech",
 			duration: "Novembro 2018 - Junho 2019",
-			subtitle: "Desenvolvedor Sênior",
+			subtitle: "Engenheiro de Software Sênior",
 			details: [
 				"Manutenção e evolução de sistemas web e aplicativos para clientes do setor público, com foco em integridade e segurança de dados.",
 			],
 			tags: [
-				"Angular",
-				"Visual C#",
-				"NET 3.0",
+				"C#",
+				".NET Core 3.0",
 				"SQL Server",
 				"ASP.NET MVC",
 				"TFS",
 			],
-			icon: "users",
 		},
 		{
-			title: "AGÊNCIA ROCK",
+			title: "Agência Rock",
 			duration: "Julho 2017 - Novembro 2018",
-			subtitle: "Desenvolvedor Pleno",
+			subtitle: "Desenvolvedor de Software Pleno",
 			details: [
 				"APIs e projetos de e-commerce para marcas como Brastemp, Consul, Petrobras e Samsung, incluindo integrações via XML e catálogos de campanhas de incentivo."
 			],
 			tags: [
-				"HTML5",
-				"Bootstrap",
-				"Visual C#",
-				"NET 2.2",
+				"C#",
+				".NET Core 2.2",
 				"ASP.NET MVC",
 				"Git",
 			],
-			icon: "bullhorn",
 		},
 		{
-			title: "GS RETAIL",
+			title: "GS Retail",
 			duration: "Novembro 2015 - Julho 2017",
-			subtitle: "Desenvolvedor Pleno",
+			subtitle: "Desenvolvedor de Software Pleno",
 			details: [
 				"Soluções personalizadas para o setor varejista em C#, ASP.NET e SQL Server, com integrações entre sistemas."
 			],
 			tags: [
-				"HTML5",
-				"CSS",
-				"Visual C#",
-				"NET Framework 4.5",
+				"C#",
+				".NET Framework 4.5",
 				"ASP.NET",
 				"SQL Server",
 			],
-			icon: "shopping-bag",
 		},
 		{
-			title: "Kemek Soluções",
+			title: "Kemek Soluções em TI",
 			duration: "Janeiro 2014 - Outubro 2015",
-			subtitle: "Desenvolvedor Júnior",
+			subtitle: "Desenvolvedor de Software Júnior",
 			details: [
 				"Desenvolvimento de sistemas web em C# e ASP.NET MVC."
 			],
 			tags: [
-				"HTML5",
-				"CSS",
-				"Visual C#",
-				"NET Framework 4.0",
+				"C#",
+				".NET Framework 4.0",
 				"ASP.NET MVC",
 			],
-			icon: "shopping-bag",
 		},
 		{
-			title: "Grupo SHC S.A",
+			title: "Grupo SHC",
 			duration: "Março 2013 - Novembro 2013",
-			subtitle: "Desenvolvedor Júnior",
+			subtitle: "Desenvolvedor de Software Júnior",
 			details: [
 				"Sistemas ERP e aplicações web para concessionárias da montadora JAC Motors, cobrindo gestão de estoque, vendas e relatórios financeiros."
 			],
 			tags: [
-				"HTML5",
-				"CSS",
-				"Visual C#",
-				"NET Framework 4.0",
+				"C#",
+				".NET Framework 4.0",
 				"ASP.NET MVC",
 			],
-			icon: "car",
 		},
 		{
-			title: "Print Laser Service S.A",
+			title: "Grupo Print Laser",
 			duration: "Janeiro 2012 - Março 2013",
-			subtitle: "Desenvolvedor Júnior",
+			subtitle: "Analista Desenvolvedor",
 			details: [
 				"Processamento de dados variáveis, recepção de arquivos via FTP, geração de relatórios e manutenção de web services."
 			],
 			tags: [
-				"Visual C#",
+				"C#",
 				"VB 6",
-				"NET Framework 3.5",
+				".NET Framework 3.5",
 				"Visual Source Safe",
 				"FTP",
 				"Expressões Regulares",
 			],
-			icon: "envelope-o",
 		},
 	],
 	education: [
@@ -352,8 +341,15 @@ const en = {
 			details: [
 				"Senior backend development and solutions architecture on SalesAgent, a generative AI agent for assisted sales over WhatsApp."
 			],
-			tags: [],
-			icon: "robot",
+			tags: [
+				"Python",
+				"Pydantic AI",
+				"Azure OpenAI",
+				"PostgreSQL",
+				"Kafka",
+				"AKS/Kubernetes",
+				"Kong",
+			],
 		},
 		{
 			title: "Casas Bahia Tecnologia",
@@ -364,11 +360,10 @@ const en = {
 			],
 			tags: [
 				"Technical Leadership",
-				"NET 10",
+				".NET 10",
 				"Architecture",
 				"People Management",
 			],
-			icon: "briefcase",
 		},
 		{
 			title: "Casas Bahia Tecnologia",
@@ -378,131 +373,114 @@ const en = {
 				"Squad owning the homepage and product detail page, integrating catalog, pricing, recommendation and advertising across the iOS and Android apps. Started in August 2021 through Stefanini Brasil and was hired directly by Casas Bahia Tecnologia in December 2022."
 			],
 			tags: [
-				"NET 9",
+				".NET 9",
 				"AKS / Kubernetes",
 				"Microservices",
 				"Postman Newman",
 				"Dynatrace / ELK",
 				"Redis / MongoDB"
 			],
-			icon: "shopping-bag",
 		},
 		{
-			title: "MOUT'S",
+			title: "Mouts TI",
 			duration: "January 2020 - June 2021",
-			subtitle: "Senior Developer",
+			subtitle: "Senior Software Engineer",
 			details: [
 				"Migrated AMBEV's supply management systems from PHP 7 to ASP.NET Core, improving performance, security and maintainability. Led the upgrade from .NET Core 2.2 to 3.0 across the codebase.",
 			],
 			tags: [
-				"Visual C#",
-				"NET 2.2",
-				"NET 3.0",
+				"C#",
+				".NET Core 2.2",
+				".NET Core 3.0",
 				"PHP",
 				"Docker",
 				"Apache",
 			],
-			icon: "beer",
 		},
 		{
-			title: "CESTECH",
+			title: "CESTech",
 			duration: "November 2018 - June 2019",
-			subtitle: "Senior Developer",
+			subtitle: "Senior Software Engineer",
 			details: [
 				"Maintained and evolved web systems and mobile applications for public sector clients, focused on data integrity and security.",
 			],
 			tags: [
-				"Angular",
-				"Visual C#",
-				"NET 3.0",
+				"C#",
+				".NET Core 3.0",
 				"SQL Server",
 				"ASP.NET MVC",
 				"TFS",
 			],
-			icon: "users",
 		},
 		{
-			title: "AGÊNCIA ROCK",
+			title: "Agência Rock",
 			duration: "July 2017 - November 2018",
-			subtitle: "Mid-level Developer",
+			subtitle: "Mid-level Software Developer",
 			details: [
 				"APIs and e-commerce projects for brands including Brastemp, Consul, Petrobras and Samsung, covering XML integrations and incentive campaign catalogs."
 			],
 			tags: [
-				"HTML5",
-				"Bootstrap",
-				"Visual C#",
-				"NET 2.2",
+				"C#",
+				".NET Core 2.2",
 				"ASP.NET MVC",
 				"Git",
 			],
-			icon: "bullhorn",
 		},
 		{
-			title: "GS RETAIL",
+			title: "GS Retail",
 			duration: "November 2015 - July 2017",
-			subtitle: "Mid-level Developer",
+			subtitle: "Mid-level Software Developer",
 			details: [
 				"Custom solutions for the retail sector in C#, ASP.NET and SQL Server, including system-to-system integrations."
 			],
 			tags: [
-				"HTML5",
-				"CSS",
-				"Visual C#",
-				"NET Framework 4.5",
+				"C#",
+				".NET Framework 4.5",
 				"ASP.NET",
 				"SQL Server",
 			],
-			icon: "shopping-bag",
 		},
 		{
-			title: "Kemek Soluções",
+			title: "Kemek Soluções em TI",
 			duration: "January 2014 - October 2015",
-			subtitle: "Junior Developer",
+			subtitle: "Junior Software Developer",
 			details: [
 				"Web systems development in C# and ASP.NET MVC."
 			],
 			tags: [
-				"HTML5",
-				"CSS",
-				"Visual C#",
-				"NET Framework 4.0",
+				"C#",
+				".NET Framework 4.0",
 				"ASP.NET MVC",
 			],
-			icon: "shopping-bag",
 		},
 		{
-			title: "Grupo SHC S.A",
+			title: "Grupo SHC",
 			duration: "March 2013 - November 2013",
-			subtitle: "Junior Developer",
+			subtitle: "Junior Software Developer",
 			details: [
 				"ERP systems and web applications for JAC Motors dealerships, covering inventory management, sales and financial reporting."
 			],
 			tags: [
-				"HTML5",
-				"CSS",
-				"Visual C#",
-				"NET Framework 4.0",
+				"C#",
+				".NET Framework 4.0",
 				"ASP.NET MVC",
 			],
-			icon: "car",
 		},
 		{
-			title: "Print Laser Service S.A",
+			title: "Grupo Print Laser",
 			duration: "January 2012 - March 2013",
-			subtitle: "Junior Developer",
+			subtitle: "Developer Analyst",
 			details: [
 				"Variable data processing, FTP file intake, report generation and web service maintenance."
 			],
 			tags: [
-				"Visual C#",
+				"C#",
 				"VB 6",
-				"NET Framework 3.5",
+				".NET Framework 3.5",
 				"Visual Source Safe",
 				"FTP",
 				"Regular Expressions",
 			],
-			icon: "envelope-o",
 		},
 	],
 	education: [

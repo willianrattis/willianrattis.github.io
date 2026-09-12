@@ -16,7 +16,7 @@ const translations = {
             role: "Tech Lead · Engenheiro de Software Sênior · Arquitetura de Soluções",
             location: "Presidente Venceslau, São Paulo, Brasil · Trabalho remoto",
             typewriter: ["Tech Lead", "Arquitetura de Soluções", "Microsserviços em .NET", "IA Generativa"],
-            ctaProject: "Ver Projetos",
+            ctaProject: "Ver destaques",
             ctaContact: "Contato"
         },
         headers: {
@@ -24,9 +24,9 @@ const translations = {
             skills: "Tech Stack",
             projects: "Trabalhos em destaque",
             experience: "Jornada",
-            contact: "Vamos Construir o Futuro?",
-            contactDesc: "Estou sempre aberto a novas oportunidades e desafios.",
-            emailBtn: "Mande um Hello"
+            contact: "Vamos conversar",
+            contactDesc: "Estou aberto a conversas sobre arquitetura, plataformas de alto tráfego e inteligência artificial aplicada a produto.",
+            emailBtn: "Enviar e-mail"
         },
         footer: {
             copyright: "Designed & Built by Willian Rattis © {year}"
@@ -49,7 +49,7 @@ const translations = {
             role: "Tech Lead · Senior Software Engineer · Solutions Architecture",
             location: "Presidente Venceslau, São Paulo, Brazil · Remote",
             typewriter: ["Tech Lead", "Solutions Architecture", ".NET Microservices", "Generative AI"],
-            ctaProject: "View Projects",
+            ctaProject: "View featured work",
             ctaContact: "Contact"
         },
         headers: {
@@ -57,9 +57,9 @@ const translations = {
             skills: "Tech Stack",
             projects: "Featured work",
             experience: "Journey",
-            contact: "Let's Build the Future?",
-            contactDesc: "I am always open to new opportunities and challenges.",
-            emailBtn: "Say Hello"
+            contact: "Get in touch",
+            contactDesc: "I am open to conversations about architecture, high-traffic platforms and artificial intelligence applied to product.",
+            emailBtn: "Send an email"
         },
         footer: {
             copyright: "Designed & Built by Willian Rattis © {year}"

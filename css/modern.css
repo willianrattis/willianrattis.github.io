@@ -114,9 +114,8 @@ a:hover {
     flex-direction: column;
 }
 
-.neon-text {
-    color: var(--primary-neon);
-    text-shadow: 0 0 5px rgba(102, 252, 241, 0.5);
+.mono-font {
+    font-family: var(--font-mono);
 }
 
 /* Hero Section */

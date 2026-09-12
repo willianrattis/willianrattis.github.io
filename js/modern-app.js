@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateStaticContent(); // Initial static text render
     populateContent();
     initInteractions();
+    initNavigation();
     initAOS();
     updateLangButton(getCurrentLang());
 });
@@ -42,11 +43,20 @@ function initVisuals() {
 }
 
 function initTypewriter() {
+    const strings = getTranslation('hero.typewriter');
+
+    if (typeof Typed === 'undefined') {
+        console.warn("Typed.js failed to load; falling back to a static role line.");
+        const staticRole = document.getElementById('typing-text');
+        if (staticRole && Array.isArray(strings)) staticRole.textContent = strings[0];
+        return;
+    }
+
     if (typedInstance) {
         typedInstance.destroy();
     }
     typedInstance = new Typed('#typing-text', {
-        strings: getTranslation('hero.typewriter'),
+        strings: strings,
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
