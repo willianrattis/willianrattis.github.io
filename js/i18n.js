@@ -9,7 +9,9 @@ const translations = {
             contact: "Conectar"
         },
         hero: {
-            role: "Senior Software Engineer",
+            role: "Tech Lead · Engenheiro de Software Sênior · Arquitetura de Soluções",
+            location: "Presidente Venceslau, São Paulo, Brasil · Trabalho remoto",
+            typewriter: ["Tech Lead", "Arquitetura de Soluções", "Microsserviços em .NET", "IA Generativa"],
             ctaProject: "Ver Projetos",
             ctaContact: "Contato"
         },
@@ -36,7 +38,9 @@ const translations = {
             contact: "Connect"
         },
         hero: {
-            role: "Senior Software Engineer",
+            role: "Tech Lead · Senior Software Engineer · Solutions Architecture",
+            location: "Presidente Venceslau, São Paulo, Brazil · Remote",
+            typewriter: ["Tech Lead", "Solutions Architecture", ".NET Microservices", "Generative AI"],
             ctaProject: "View Projects",
             ctaContact: "Contact"
         },

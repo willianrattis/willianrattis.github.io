@@ -1,6 +1,8 @@
 // Modern App Entry Point
 import db from '../db/db.js';
-import { getCurrentLang, setLanguage, updateStaticContent } from './i18n.js';
+import { getCurrentLang, setLanguage, updateStaticContent, getTranslation } from './i18n.js';
+
+let typedInstance = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     // console.log('Modern Portfolio Loaded. Initializing systems...', data);
@@ -36,9 +38,15 @@ function initVisuals() {
     }
 
     // 2. Typed JS
-    // Extract user roles from bio or hardcode for effect
-    new Typed('#typing-text', {
-        strings: ['Cloud Architect', 'DevOps Enthusiast', '.NET Specialist', 'Full Stack Developer'],
+    initTypewriter();
+}
+
+function initTypewriter() {
+    if (typedInstance) {
+        typedInstance.destroy();
+    }
+    typedInstance = new Typed('#typing-text', {
+        strings: getTranslation('hero.typewriter'),
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
@@ -190,6 +198,7 @@ function initInteractions() {
             setLanguage(newLang);
             updateLangButton(newLang);
             populateContent();
+            initTypewriter();
 
             // Re-init Tilt for new elements
             initTilt();

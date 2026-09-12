@@ -2,9 +2,9 @@ const pt = {
 	bio: {
 		about: {
 			text: [
-				"Olá 👋 <br>Meu nome é Willian. Atualmente eu trabalho como <b>Engenheiro de Software</b> especializado em <b>NET</b>. Graduado pela FATEC.",
-				"Eu sou um <b>desenvolvedor</b> curioso, gosto de aprender, trabalhar em equipe e propor soluções. Tenho um perfil proativo.",
-				"Apaixonado pelo que faz <i class='fa fa-code'></i>"
+				"Sou engenheiro de software há 13 anos. Comecei com sistemas web e ERP, passei por e-commerce e integrações, e nos últimos anos venho atuando em plataformas de varejo digital de grande porte, hoje como Tech Lead e em arquitetura de soluções no Grupo Casas Bahia.",
+				"Atuei na squad de vitrine do e-commerce e, a partir de dezembro de 2024, na liderança técnica da squad responsável pelas jornadas de autenticação e cadastro das marcas Casas Bahia, Extra e Pontofrio. Desde agosto de 2026 atuo no SalesAgent, agente de inteligência artificial generativa para vendas assistidas no canal WhatsApp.",
+				"O que mais valorizo no meu trabalho é a parte que não aparece no código: traduzir problema técnico para quem não é técnico, aproximar times que dependem uns dos outros e criar um ambiente em que as pessoas se sintam à vontade para crescer."
 			],
 		}
 	},
@@ -262,9 +262,9 @@ const en = {
 	bio: {
 		about: {
 			text: [
-				"Hello 👋 <br>My name is Willian. I currently work as a <b>Software Engineer</b> specializing in <b>.NET</b>. Graduated from FATEC.",
-				"I am a curious <b>developer</b>, I like to learn, work in a team and propose solutions. I have a proactive profile.",
-				"Passionate about what I do <i class='fa fa-code'></i>"
+				"I have been a software engineer for 13 years. I started with web systems and ERP, moved through e-commerce and integrations, and in recent years I have worked on large-scale digital retail platforms, today as a Tech Lead and in solutions architecture at Grupo Casas Bahia.",
+				"I worked on the e-commerce storefront squad and, from December 2024, led the squad responsible for authentication and sign-up journeys across the Casas Bahia, Extra and Pontofrio brands. Since August 2026 I have been working on SalesAgent, a generative AI agent for assisted sales over WhatsApp.",
+				"What I value most in my work is the part that does not show up in the code: translating technical problems for people who are not technical, bringing together teams that depend on each other, and creating an environment where people feel comfortable growing."
 			],
 		}
 	},
