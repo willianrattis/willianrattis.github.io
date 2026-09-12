@@ -4,7 +4,7 @@ const translations = {
             start: "Start",
             about: "Sobre",
             skills: "Stack",
-            projects: "Projetos",
+            projects: "Destaques",
             experience: "XP",
             contact: "Conectar"
         },
@@ -16,7 +16,7 @@ const translations = {
         headers: {
             about: "Sobre Mim",
             skills: "Tech Stack",
-            projects: "Projetos",
+            projects: "Trabalhos em destaque",
             experience: "Jornada",
             contact: "Vamos Construir o Futuro?",
             contactDesc: "Estou sempre aberto a novas oportunidades e desafios.",
@@ -31,7 +31,7 @@ const translations = {
             start: "Start",
             about: "About",
             skills: "Stack",
-            projects: "Projects",
+            projects: "Featured",
             experience: "XP",
             contact: "Connect"
         },
@@ -43,7 +43,7 @@ const translations = {
         headers: {
             about: "About Me",
             skills: "Tech Stack",
-            projects: "Projects",
+            projects: "Featured work",
             experience: "Journey",
             contact: "Let's Build the Future?",
             contactDesc: "I am always open to new opportunities and challenges.",

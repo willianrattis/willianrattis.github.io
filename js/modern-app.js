@@ -87,39 +87,20 @@ function populateContent() {
         });
     }
 
-    // --- Projects ---
+    // --- Featured Work ---
     const projectsContainer = document.getElementById('projects-container');
-    if (data.projects) {
-        // Flatten categories for modern grid
-        const allProjects = [
-            ...data.projects.web.map(p => ({ ...p, category: 'Web' })),
-            ...data.projects.software.map(p => ({ ...p, category: 'Software' })),
-            ...data.projects.app.map(p => ({ ...p, category: 'App' }))
-        ];
-
-        allProjects.forEach(project => {
-            // Skip empty projects (some in db.js seemed empty)
-            if (!project.summary) return;
-
+    if (data.featured) {
+        data.featured.forEach(item => {
             const card = document.createElement('div');
             card.className = 'project-card';
             card.setAttribute('data-tilt', ''); // Activation for Tilt.js
             card.setAttribute('data-aos', 'fade-up');
 
-            let techTags = '';
-            if (project.techStack) {
-                project.techStack.forEach(t => techTags += `<span class="tech-tag">#${t}</span>`);
-            }
-
-            // Fallback content if title missing
-            const title = project.projectName || project.category + " Project";
-
             card.innerHTML = `
                 <div class="project-content">
-                    <span class="project-category">${project.category}</span>
-                    <h3 class="project-title">${title}</h3>
-                    <p class="project-desc">${project.summary}</p>
-                    <div class="project-tech">${techTags}</div>
+                    <span class="project-category">${item.context}</span>
+                    <h3 class="project-title">${item.title}</h3>
+                    <p class="project-desc">${item.description}</p>
                 </div>
             `;
             projectsContainer.appendChild(card);

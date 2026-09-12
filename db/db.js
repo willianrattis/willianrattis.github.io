@@ -70,55 +70,50 @@ const pt = {
 			percentage: "60",
 		},
 	],
-	projects: {
-		web: [
-			{
-				projectName: "Web Development",
-				image: "",
-				summary:
-					"Como desenvolvedor web, tenho trabalhado com uma variedade de tecnologias ao longo dos anos. Comecei minha carreira trabalhando com tecnologias precursoras da web, como ASP.NET Web Forms, mas recentemente me especializei em frameworks modernos como Angular e React.",
-				preview: "",
-				techStack: [
-					"Angular",
-					"React",
-					"ASP.NET MVC",
-					"HTML5",
-					"Bootstrap",
-					"JavaScript",
-					"CSS",
-				],
-			}
-		],
-		software: [
-			{
-				projectName: "Distributed Systems",
-				image: "",
-				summary:
-					"Nos últimos anos, dediquei-me a desenvolver sistemas distribuídos e escaláveis, utilizando tecnologias populares como AKS, Kubernetes e Docker, junto com as mais recentes atualizações do framework .NET. Recentemente, utilizei essas tecnologias para construir um sistema para uma empresa de comércio eletrônico.",
-				preview: "",
-				techStack: [
-					"NET",
-					"ASP.NET Web API",
-					"Swagger",
-					"Microserviços",
-					"Kafka",
-					"MongoDb",
-				],
-			}
-		],
-		app: [
-			{
-				projectName: "Mobile Native & BFF",
-				image: "",
-				summary:
-					"Durante os últimos quatro anos, tive a oportunidade de trabalhar junto com desenvolvimento de aplicativos nativos tanto para iOS quanto para Android. Essa jornada me permitiu compreender as particularidades desses dispositivos, além de me familiarizar com a necessidade de construir APIs Gateways (BFF) para atender esses dispositivos.",
-				techStack: [
-					"iOS",
-					"Android",
-				],
-			}
-		]
-	},
+	featured: [
+		{
+			title: "Autenticação do canal WhatsApp",
+			context: "SalesAgent · 2026",
+			description:
+				"Projetei e implementei o modelo de autenticação do canal, desbloqueando as jornadas que dependem de login, entre elas o fechamento de compra e a venda de produtos de marketplace. Assumi a frente por conhecer o produto de autenticação da companhia, resolvendo ponta a ponta, em Python e C#.",
+		},
+		{
+			title: "Centralização da verificação em duas etapas",
+			context: "Onboarding · 2024-2026",
+			description:
+				"Arquitetei a centralização da verificação em duas etapas, que passou a ser tratada em um único ponto de controle em vez de replicada por jornada e por canal. A iniciativa reduziu fraude, sequestro de conta e chargeback.",
+		},
+		{
+			title: "Testes de regressão e de contrato como padrão da companhia",
+			context: "Vitrine · 2023",
+			description:
+				"Introduzi testes de regressão e de contrato na esteira de CI/CD, executados a cada alteração para impedir que novas entregas quebrassem funcionalidades existentes ou os contratos das APIs. A prática nasceu de uma investigação de inconsistências em integração com parceiro externo, foi provada nos BFFs dos aplicativos e, em parceria com o time de esteira, tornou-se padrão da companhia, integrando a métrica de maturidade e condicionando a liberação de deploys diurnos.",
+		},
+		{
+			title: "Fonte única de preço na jornada do cliente",
+			context: "Vitrine · 2021-2024",
+			description:
+				"Propus e conduzi a reorganização das APIs de catálogo e preço, estabelecendo uma fonte única de preço. Eliminou divergências de preço entre anúncio, vitrine e página de produto, que geravam reclamações e desgaste de marca.",
+		},
+		{
+			title: "Resposta a incidentes em segundos",
+			context: "Onboarding · 2024-2026",
+			description:
+				"Idealizei a solução que substituiu um processo manual de contingência, com controle de acesso e histórico de alterações. O tempo de resposta a incidentes passou de mais de uma hora para segundos.",
+		},
+		{
+			title: "Integração com a plataforma antifraude",
+			context: "Onboarding · 2024-2026",
+			description:
+				"Estruturei a integração entre as jornadas de cadastro e autenticação e a plataforma antifraude, fornecendo ao motor de risco sinais em tempo real para suas decisões.",
+		},
+		{
+			title: "Modernização da stack e qualidade de engenharia",
+			context: "Onboarding · 2024-2026",
+			description:
+				"Mantive a stack atualizada até o .NET 10, padronizei a gestão de dependências entre os projetos e sustentei nota A na análise estática. Reduzi em 86% os débitos técnicos de segurança da squad em um semestre. No último semestre, a squad registrou o maior volume de subidas em produção com o menor número de incidentes.",
+		},
+	],
 	experience: [
 		{
 			title: "Casas Bahia Tecnologia",
@@ -390,55 +385,50 @@ const en = {
 			percentage: "60",
 		},
 	],
-	projects: {
-		web: [
-			{
-				projectName: "Web Development",
-				image: "",
-				summary:
-					"As a web developer, I have worked with a variety of technologies over the years. I started my career working with precursor web technologies such as ASP.NET Web Forms, but recently I have specialized in modern frameworks such as Angular and React.",
-				preview: "",
-				techStack: [
-					"Angular",
-					"React",
-					"ASP.NET MVC",
-					"HTML5",
-					"Bootstrap",
-					"JavaScript",
-					"CSS",
-				],
-			}
-		],
-		software: [
-			{
-				projectName: "Distributed Systems",
-				image: "",
-				summary:
-					"In recent years, I have dedicated myself to developing distributed and scalable systems, using popular technologies such as AKS, Kubernetes and Docker, together with the latest updates to the .NET framework. Recently, I used these technologies to build a system for an e-commerce company.",
-				preview: "",
-				techStack: [
-					"NET",
-					"ASP.NET Web API",
-					"Swagger",
-					"Microservices",
-					"Kafka",
-					"MongoDb",
-				],
-			}
-		],
-		app: [
-			{
-				projectName: "Mobile Native & BFF",
-				image: "",
-				summary:
-					"Over the last four years, I have had the opportunity to work on native application development for both iOS and Android. This journey allowed me to understand the particularities of these devices, in addition to becoming familiar with the need to build API Gateways (BFF) to serve these devices.",
-				techStack: [
-					"iOS",
-					"Android",
-				],
-			}
-		]
-	},
+	featured: [
+		{
+			title: "WhatsApp channel authentication",
+			context: "SalesAgent · 2026",
+			description:
+				"Designed and implemented the authentication model for the channel, unblocking every journey that depends on login, including checkout and marketplace product sales. Took on the effort because of my knowledge of the company's authentication product, solving it end to end in Python and C#.",
+		},
+		{
+			title: "Centralized two-step verification",
+			context: "Onboarding · 2024-2026",
+			description:
+				"Architected moving two-step verification to a single control point, replacing an approach that was replicated per journey and per channel. The initiative reduced fraud, account takeover and chargebacks.",
+		},
+		{
+			title: "Regression and contract testing as a company standard",
+			context: "Storefront · 2023",
+			description:
+				"Introduced regression and contract testing into the CI/CD pipeline, running on every change to prevent new releases from breaking existing functionality or API contracts. It grew out of an investigation into inconsistencies in a third-party integration, was proven on the mobile BFFs and, implemented together with the pipeline team, became a company-wide standard: it joined the engineering maturity metric and became a gate for daytime deployments.",
+		},
+		{
+			title: "A single pricing source across the customer journey",
+			context: "Storefront · 2021-2024",
+			description:
+				"Proposed and led the reorganization of catalog and pricing APIs, establishing a single pricing source. This eliminated price discrepancies between ad, storefront and product page that drove customer complaints and brand damage.",
+		},
+		{
+			title: "Incident response in seconds",
+			context: "Onboarding · 2024-2026",
+			description:
+				"Conceived the solution that replaced a manual contingency process, with access control and change history. Incident response time went from over an hour to seconds.",
+		},
+		{
+			title: "Fraud-prevention platform integration",
+			context: "Onboarding · 2024-2026",
+			description:
+				"Structured the integration between sign-up and authentication journeys and the fraud-prevention platform, feeding the risk engine with real-time signals for its decisions.",
+		},
+		{
+			title: "Stack modernization and engineering quality",
+			context: "Onboarding · 2024-2026",
+			description:
+				"Kept the stack current through .NET 10, standardized dependency management across projects and sustained an A rating on static analysis. Reduced the squad's security technical debt by 86% in one semester. In the last semester, the squad recorded the highest production deployment volume with the fewest incidents.",
+		},
+	],
 	experience: [
 		{
 			title: "Casas Bahia Tecnologia",
