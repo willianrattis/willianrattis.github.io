@@ -134,8 +134,7 @@ const pt = {
 			duration: "Janeiro 2020 - Junho 2021",
 			subtitle: "Desenvolvedor Sênior",
 			details: [
-				"Como desenvolvedor, trabalhei na equipe responsável pela migração dos sistemas de gestão de insumos na fábrica da AMBEV, de PHP 7 para ASP.NET Core. Essa migração permitiu uma melhoria significativa no desempenho dos sistemas, além de garantir uma maior segurança e manutenibilidade das aplicações.",
-				"A migração do sistema de NET Core 2.2 para o 3.0 foi um desafio significativo, devido às grandes mudanças no framework. Foi necessário ajustar o código para se adequar às novas funcionalidades e melhorias, mas graças ao esforço da equipe de desenvolvimento, conseguimos realizar essa tarefa com sucesso.",
+				"Migração dos sistemas de gestão de insumos da AMBEV de PHP 7 para ASP.NET Core, com ganhos de desempenho, segurança e manutenibilidade. Condução da atualização de .NET Core 2.2 para 3.0 em toda a base de código.",
 			],
 			tags: [
 				"Visual C#",
@@ -152,8 +151,7 @@ const pt = {
 			duration: "Novembro 2018 - Junho 2019",
 			subtitle: "Desenvolvedor Sênior",
 			details: [
-				"Como desenvolvedor trabalhei na manutenção de sistemas, com equipes no aperfeiçoamento de soluções tecnológicas personalizadas para prefeituras e sistemas estaduais.",
-				"Meus projetos incluem a criação de aplicativos e sistemas web para garantir a eficiência e transparência dos processos administrativos, além de manter a integridade e segurança dos dados. Acompanhando de perto a evolução e tendências tecnológicas para garantir a melhor performance para os sistemas.",
+				"Manutenção e evolução de sistemas web e aplicativos para clientes do setor público, com foco em integridade e segurança de dados.",
 			],
 			tags: [
 				"Angular",
@@ -170,7 +168,7 @@ const pt = {
 			duration: "Julho 2017 - Novembro 2018",
 			subtitle: "Desenvolvedor Pleno",
 			details: [
-				"Como desenvolvedor, tive a oportunidade de atuar em projetos de e-commerce, desenvolvimento de APIs, integração com arquivos XML, criação de catálogos de prêmios e campanhas de incentivo interno para empresas renomadas como BRASTEMP, CONSUL, PETROBRAS e SAMSUNG. Tudo isso me permitiu adquirir uma ampla gama de habilidades e conhecimentos na área de marketing digital, e me permitiu entregar soluções eficazes para meus clientes."
+				"APIs e projetos de e-commerce para marcas como Brastemp, Consul, Petrobras e Samsung, incluindo integrações via XML e catálogos de campanhas de incentivo."
 			],
 			tags: [
 				"HTML5",
@@ -187,7 +185,7 @@ const pt = {
 			duration: "Novembro 2015 - Julho 2017",
 			subtitle: "Desenvolvedor Pleno",
 			details: [
-				"Como desenvolvedor de software, pude trabalhar em soluções para o setor varejista, visando a melhoria da gestão e auxílio aos varejistas. Utilizei diversas tecnologias para alcançar esses objetivos, incluindo C#, ASP.NET, JavaScript, CSS, HTML5, Web Services e integrações de sistemas. Isso me permitiu criar soluções robustas e personalizadas para atender às necessidades específicas dos meus clientes do varejo."
+				"Soluções personalizadas para o setor varejista em C#, ASP.NET e SQL Server, com integrações entre sistemas."
 			],
 			tags: [
 				"HTML5",
@@ -204,7 +202,7 @@ const pt = {
 			duration: "Janeiro 2014 - Outubro 2015",
 			subtitle: "Desenvolvedor Júnior",
 			details: [
-				"Como desenvolvedor de software, nesta época trabalhei com desenvolvimento de sistemas web utilizando C# e ASP.NET MVC com Razor para o front-end. Isso me permitiu criar soluções eficientes e intuitivas para usuários, com uma interface amigável e fácil de usar. Além disso, a experiência adquirida na construção de aplicações web me permitiu me desenvolver como profissional e aprender mais sobre arquitetura MVC."
+				"Desenvolvimento de sistemas web em C# e ASP.NET MVC."
 			],
 			tags: [
 				"HTML5",
@@ -220,7 +218,7 @@ const pt = {
 			duration: "Março 2013 - Novembro 2013",
 			subtitle: "Desenvolvedor Júnior",
 			details: [
-				"Como desenvolvedor de software, tive a oportunidade de trabalhar com sistemas ERP e desenvolvimento de sistemas web para a recém-chegada montadora JAC Motors. Essa experiência me permitiu trabalhar com soluções que contribuíam para as atividades comuns necessárias para concessionárias da marca, incluindo gerenciamento de estoque, vendas e relatórios financeiros. Isso me permitiu adquirir habilidades valiosas e conhecimentos sobre a indústria automotiva, bem como melhorar minha compreensão de como fazer levantamento de requisitos."
+				"Sistemas ERP e aplicações web para concessionárias da montadora JAC Motors, cobrindo gestão de estoque, vendas e relatórios financeiros."
 			],
 			tags: [
 				"HTML5",
@@ -236,7 +234,7 @@ const pt = {
 			duration: "Janeiro 2012 - Março 2013",
 			subtitle: "Desenvolvedor Júnior",
 			details: [
-				"Como desenvolvedor de software, tive a oportunidade de trabalhar com tratamento de dados para uma das maiores empresas do ramo de impressão de correspondências e contas do país. Essa foi minha primeira experiência e foi muito valiosa, pois devido ao grande volume de dados a serem tratados, tive a oportunidade de trabalhar com técnicas avançadas de manipulação de strings, expressões regulares e desenvolvimento de serviços para Windows que rodam em background nos servidores, aguardando a chegada de dados via FTP. Trabalhei com tecnologias antigas como o Net Framework 3.0 e 3.5, Visual Studio 2005 e 2008 e ainda Visual Basic 6, mas essa experiência foi fundamental para meu crescimento como desenvolvedor de software."
+				"Processamento de dados variáveis, recepção de arquivos via FTP, geração de relatórios e manutenção de web services."
 			],
 			tags: [
 				"Visual C#",
@@ -394,8 +392,7 @@ const en = {
 			duration: "January 2020 - June 2021",
 			subtitle: "Senior Developer",
 			details: [
-				"As a developer, I worked on the team responsible for migrating input management systems at the AMBEV factory from PHP 7 to ASP.NET Core. This migration allowed for a significant improvement in system performance, as well as ensuring greater security and maintainability of applications.",
-				"Migrating the system from NET Core 2.2 to 3.0 was a significant challenge due to major changes in the framework. It was necessary to adjust the code to suit new features and improvements, but thanks to the development team's effort, we successfully accomplished this task.",
+				"Migrated AMBEV's supply management systems from PHP 7 to ASP.NET Core, improving performance, security and maintainability. Led the upgrade from .NET Core 2.2 to 3.0 across the codebase.",
 			],
 			tags: [
 				"Visual C#",
@@ -412,8 +409,7 @@ const en = {
 			duration: "November 2018 - June 2019",
 			subtitle: "Senior Developer",
 			details: [
-				"As a developer, I worked on maintaining systems, with teams improving personalized technological solutions for city halls and state systems.",
-				"My projects include creating applications and web systems to ensure efficiency and transparency of administrative processes, as well as maintaining data integrity and security. Closely following technological evolution and trends to ensure the best performance for systems.",
+				"Maintained and evolved web systems and mobile applications for public sector clients, focused on data integrity and security.",
 			],
 			tags: [
 				"Angular",
@@ -430,7 +426,7 @@ const en = {
 			duration: "July 2017 - November 2018",
 			subtitle: "Mid-level Developer",
 			details: [
-				"As a developer, I had the opportunity to work on e-commerce projects, API development, XML file integration, creation of prize catalogs and internal incentive campaigns for renowned companies such as BRASTEMP, CONSUL, PETROBRAS and SAMSUNG. All of this allowed me to acquire a wide range of skills and knowledge in digital marketing, and enabled me to deliver effective solutions to my clients."
+				"APIs and e-commerce projects for brands including Brastemp, Consul, Petrobras and Samsung, covering XML integrations and incentive campaign catalogs."
 			],
 			tags: [
 				"HTML5",
@@ -447,7 +443,7 @@ const en = {
 			duration: "November 2015 - July 2017",
 			subtitle: "Mid-level Developer",
 			details: [
-				"As a software developer, I was able to work on solutions for the retail sector, aiming to improve management and assist retailers. I used various technologies to achieve these goals, including C#, ASP.NET, JavaScript, CSS, HTML5, Web Services and system integrations. This allowed me to create robust and personalized solutions to meet the specific needs of my retail clients."
+				"Custom solutions for the retail sector in C#, ASP.NET and SQL Server, including system-to-system integrations."
 			],
 			tags: [
 				"HTML5",
@@ -464,7 +460,7 @@ const en = {
 			duration: "January 2014 - October 2015",
 			subtitle: "Junior Developer",
 			details: [
-				"As a software developer, at this time I worked on web system development using C# and ASP.NET MVC with Razor for the front-end. This allowed me to create efficient and intuitive solutions for users, with a friendly and easy-to-use interface. Additionally, the experience gained in building web applications allowed me to develop as a professional and learn more about MVC architecture."
+				"Web systems development in C# and ASP.NET MVC."
 			],
 			tags: [
 				"HTML5",
@@ -480,7 +476,7 @@ const en = {
 			duration: "March 2013 - November 2013",
 			subtitle: "Junior Developer",
 			details: [
-				"As a software developer, I had the opportunity to work with ERP systems and web system development for the newly arrived automaker JAC Motors. This experience allowed me to work with solutions that contributed to common activities needed for brand dealerships, including inventory management, sales and financial reports. This allowed me to acquire valuable skills and knowledge about the automotive industry, as well as improve my understanding of how to do requirements gathering."
+				"ERP systems and web applications for JAC Motors dealerships, covering inventory management, sales and financial reporting."
 			],
 			tags: [
 				"HTML5",
@@ -496,7 +492,7 @@ const en = {
 			duration: "January 2012 - March 2013",
 			subtitle: "Junior Developer",
 			details: [
-				"As a software developer, I had the opportunity to work with data processing for one of the largest companies in the bill and correspondence printing sector in the country. This was my first experience and it was very valuable, because due to the large volume of data to be processed, I had the opportunity to work with advanced string manipulation techniques, regular expressions and development of Windows services that run in the background on servers, awaiting data arrival via FTP. I worked with older technologies like Net Framework 3.0 and 3.5, Visual Studio 2005 and 2008 and even Visual Basic 6, but this experience was fundamental for my growth as a software developer."
+				"Variable data processing, FTP file intake, report generation and web service maintenance."
 			],
 			tags: [
 				"Visual C#",

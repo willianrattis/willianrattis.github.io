@@ -240,6 +240,9 @@ function updateMetaTags() {
     const ogDescriptionTag = document.querySelector('meta[property="og:description"]');
     if (ogDescriptionTag) ogDescriptionTag.setAttribute('content', description);
 
+    const twitterDescriptionTag = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDescriptionTag) twitterDescriptionTag.setAttribute('content', description);
+
     const ogLocaleTag = document.querySelector('meta[property="og:locale"]');
     if (ogLocaleTag) ogLocaleTag.setAttribute('content', ogLocale);
 }
