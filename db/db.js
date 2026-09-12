@@ -121,32 +121,36 @@ const pt = {
 	},
 	experience: [
 		{
-			title: "Grupo Casas Bahia",
-			duration: "Dezembro 2024 - Presente",
+			title: "Casas Bahia Tecnologia",
+			duration: "Agosto 2026 - Presente",
 			subtitle: "Software Engineer Specialist",
 			details: [
-				"Promovido a Especialista devido à liderança técnica exercida no time de aplicativos Mobile. Atualmente lidero o time de Onboarding (Identidade e Cadastro), sendo responsável pela formação da equipe, contratações, condução de 1:1s e definição da cultura técnica.",
-				"Responsável pela arquitetura e interface com a área de negócios, balanceando demandas de Capex e Opex e definindo planejamentos estratégicos de curto a longo prazo. Lidero frentes críticas como a unificação de cadastros (Online/Lojas Físicas), agendamento de entregas e evolução da segurança com MFA e migração de autenticação (Cookies para JWT).",
-				"Iniciei a implementação de um servidor IDP (Identity Provider) e atuo em colaboração direta com os times de Cyber Segurança e Antifraude para garantir uma jornada de cliente segura e unificada."
+				"Desenvolvimento backend sênior e arquitetura de soluções no SalesAgent, agente de inteligência artificial generativa para vendas assistidas no canal WhatsApp."
+			],
+			tags: [],
+			icon: "robot",
+		},
+		{
+			title: "Casas Bahia Tecnologia",
+			duration: "Dezembro 2024 - Agosto 2026",
+			subtitle: "Software Engineer Specialist · Tech Lead",
+			details: [
+				"Liderança técnica da squad responsável pelas jornadas de login, cadastro e gestão de conta das marcas Casas Bahia, Extra e Pontofrio. Time multidisciplinar de seis pessoas, entre backend .NET, iOS, Android, React e QA. Responsável pelo roadmap trimestral, pelo planejamento técnico e pelo desenvolvimento das pessoas do time."
 			],
 			tags: [
 				"Liderança Técnica",
 				"NET 10",
 				"Arquitetura",
 				"Gestão de Pessoas",
-				"IDP / JWT",
-				"Cyber Security"
 			],
 			icon: "briefcase",
 		},
 		{
-			title: "Grupo Casas Bahia",
-			duration: "Dezembro 2022 - Dezembro 2024",
+			title: "Casas Bahia Tecnologia",
+			duration: "Agosto 2021 - Dezembro 2024",
 			subtitle: "Senior Software Engineer",
 			details: [
-				"Internalizado como Sênior após excelente desempenho na consultoria. Atuei no backend (.NET Core) do time de aplicativos Mobile, focando na Home e PDP (Página de Produto). Liderei migrações sequenciais do .NET (v3 até v9) e introduzi a cultura de testes automatizados de API com Postman Newman na esteira DevOps, elevando a qualidade das entregas.",
-				"Liderei o desacoplamento arquitetural entre Catálogo e Preço, permitindo estratégias distintas de performance: aplicação de cache para dados de catálogo (menos voláteis) e consultas em tempo real para preços (dados quentes e estratégicos). Essa mudança eliminou divergências de valor na jornada do cliente e viabilizou tecnicamente a precificação exclusiva para o aplicativo.",
-				"Participei ativamente de 5 Black Fridays (evento de tráfego massivo), utilizando Dynatrace, ELK e Grafana para observabilidade, e implementando padrões de resiliência como Circuit Breaker (Polly) em ambiente Kubernetes (AKS). Provei a eficácia do MongoDB como alternativa de cache para APIs de Imagens de alta demanda."
+				"Squad responsável pela home e pela página de produto, integrando catálogo, preço, recomendação e advertising nos aplicativos iOS e Android. Início em agosto de 2021 alocado pela Stefanini Brasil, com internalização pela Casas Bahia Tecnologia em dezembro de 2022."
 			],
 			tags: [
 				"NET 9",
@@ -157,24 +161,6 @@ const pt = {
 				"Redis / MongoDB"
 			],
 			icon: "shopping-bag",
-		},
-		{
-			title: "Stefanini (Alocado na Via Varejo)",
-			duration: "Agosto 2021 - Dezembro 2022",
-			subtitle: "Senior Software Engineer",
-			details: [
-				"Iniciei minha jornada no varejo atuando como consultor na Via Varejo (atual Grupo Casas Bahia). Trabalhei no desenvolvimento e manutenção de serviços distribuídos e APIs Gateway (BFF) para atender aos aplicativos Mobile, garantindo alta disponibilidade e escalabilidade.",
-				"Utilizei tecnologias como ASP.NET Core, Docker e Kubernetes para modernizar o legado e facilitar a evolução dos produtos digitais da companhia."
-			],
-			tags: [
-				"Visual C#",
-				"NET 5",
-				"Docker",
-				"Kubernetes",
-				"BFF",
-				"Swagger"
-			],
-			icon: "id-card",
 		},
 		{
 			title: "MOUT'S",
@@ -196,7 +182,7 @@ const pt = {
 		},
 		{
 			title: "CESTECH",
-			duration: "Novembro 2018 - Julho 2019",
+			duration: "Novembro 2018 - Junho 2019",
 			subtitle: "Desenvolvedor Sênior",
 			details: [
 				"Como desenvolvedor trabalhei na manutenção de sistemas, com equipes no aperfeiçoamento de soluções tecnológicas personalizadas para prefeituras e sistemas estaduais.",
@@ -231,7 +217,7 @@ const pt = {
 		},
 		{
 			title: "GS RETAIL",
-			duration: "Janeiro 2015 - Julho 2017",
+			duration: "Novembro 2015 - Julho 2017",
 			subtitle: "Desenvolvedor Pleno",
 			details: [
 				"Como desenvolvedor de software, pude trabalhar em soluções para o setor varejista, visando a melhoria da gestão e auxílio aos varejistas. Utilizei diversas tecnologias para alcançar esses objetivos, incluindo C#, ASP.NET, JavaScript, CSS, HTML5, Web Services e integrações de sistemas. Isso me permitiu criar soluções robustas e personalizadas para atender às necessidades específicas dos meus clientes do varejo."
@@ -455,32 +441,36 @@ const en = {
 	},
 	experience: [
 		{
-			title: "Grupo Casas Bahia",
-			duration: "December 2024 - Present",
+			title: "Casas Bahia Tecnologia",
+			duration: "August 2026 - Present",
 			subtitle: "Software Engineer Specialist",
 			details: [
-				"Promoted to Specialist due to technical leadership in the Mobile Apps team. Currently leading the Onboarding team (Identity and Registration), responsible for team building, hiring, conducting 1:1s, and defining technical culture.",
-				"Responsible for architecture and interface with the business area, balancing Capex and Opex demands and defining short to long-term strategic plans. Leading critical fronts such as unified registration (Online/Physical Stores), delivery scheduling, and security evolution with MFA and authentication migration (Cookies to JWT).",
-				"Started implementation of an IDP (Identity Provider) server and collaborating directly with Cyber Security and Antifraud teams to ensure a secure and unified customer journey."
+				"Senior backend development and solutions architecture on SalesAgent, a generative AI agent for assisted sales over WhatsApp."
+			],
+			tags: [],
+			icon: "robot",
+		},
+		{
+			title: "Casas Bahia Tecnologia",
+			duration: "December 2024 - August 2026",
+			subtitle: "Software Engineer Specialist · Tech Lead",
+			details: [
+				"Technical lead of the squad owning login, sign-up and account management journeys for the Casas Bahia, Extra and Pontofrio brands. Six-person cross-functional team spanning .NET backend, iOS, Android, React and QA. Owned the quarterly roadmap, technical planning and the development of the people on the team."
 			],
 			tags: [
 				"Technical Leadership",
 				"NET 10",
 				"Architecture",
 				"People Management",
-				"IDP / JWT",
-				"Cyber Security"
 			],
 			icon: "briefcase",
 		},
 		{
-			title: "Grupo Casas Bahia",
-			duration: "December 2022 - December 2024",
+			title: "Casas Bahia Tecnologia",
+			duration: "August 2021 - December 2024",
 			subtitle: "Senior Software Engineer",
 			details: [
-				"Internalized as Senior after excellent performance in consultancy. Worked on the backend (.NET Core) of the Mobile Apps team, focusing on Home and PDP (Product Page). Led sequential .NET migrations (v3 to v9) and introduced API automated testing culture with Postman Newman in the DevOps pipeline, elevating delivery quality.",
-				"Led architectural decoupling between Catalog and Price, allowing distinct performance strategies: caching for catalog data (less volatile) and real-time queries for prices (hot and strategic data). This change eliminated value discrepancies in the customer journey and technically enabled exclusive pricing for the app.",
-				"Actively participated in 5 Black Fridays (massive traffic event), using Dynatrace, ELK, and Grafana for observability, and implementing resilience patterns like Circuit Breaker (Polly) in Kubernetes (AKS) environment. Proven MongoDB's effectiveness as a cache alternative for high-demand Image APIs."
+				"Squad owning the homepage and product detail page, integrating catalog, pricing, recommendation and advertising across the iOS and Android apps. Started in August 2021 through Stefanini Brasil and was hired directly by Casas Bahia Tecnologia in December 2022."
 			],
 			tags: [
 				"NET 9",
@@ -491,24 +481,6 @@ const en = {
 				"Redis / MongoDB"
 			],
 			icon: "shopping-bag",
-		},
-		{
-			title: "Stefanini (Allocated at Via Varejo)",
-			duration: "August 2021 - December 2022",
-			subtitle: "Senior Software Engineer",
-			details: [
-				"Started my journey in retail acting as a consultant at Via Varejo (now Grupo Casas Bahia). Worked on the development and maintenance of distributed services and API Gateways (BFF) to serve Mobile applications, ensuring high availability and scalability.",
-				"Used technologies such as ASP.NET Core, Docker, and Kubernetes to modernize legacy systems and facilitate the evolution of the company's digital products."
-			],
-			tags: [
-				"Visual C#",
-				"NET 5",
-				"Docker",
-				"Kubernetes",
-				"BFF",
-				"Swagger"
-			],
-			icon: "id-card",
 		},
 		{
 			title: "MOUT'S",
@@ -530,7 +502,7 @@ const en = {
 		},
 		{
 			title: "CESTECH",
-			duration: "November 2018 - July 2019",
+			duration: "November 2018 - June 2019",
 			subtitle: "Senior Developer",
 			details: [
 				"As a developer, I worked on maintaining systems, with teams improving personalized technological solutions for city halls and state systems.",
@@ -565,7 +537,7 @@ const en = {
 		},
 		{
 			title: "GS RETAIL",
-			duration: "January 2015 - July 2017",
+			duration: "November 2015 - July 2017",
 			subtitle: "Mid-level Developer",
 			details: [
 				"As a software developer, I was able to work on solutions for the retail sector, aiming to improve management and assist retailers. I used various technologies to achieve these goals, including C#, ASP.NET, JavaScript, CSS, HTML5, Web Services and system integrations. This allowed me to create robust and personalized solutions to meet the specific needs of my retail clients."
